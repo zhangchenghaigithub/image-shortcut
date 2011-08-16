@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="arnodenhond.imageshortcut" android:versionCode="2"
+	android:versionName="2">
+	<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="7" />
+	<application android:icon="@drawable/imageshortcut"
+		android:label="@string/imageshortcut">
+		<activity android:name=".ImageShortcut" android:label="@string/imageshortcut">
+			<intent-filter>
+				<action android:name="android.intent.action.CREATE_SHORTCUT" />
+			</intent-filter>
+		</activity>
+	</application>
+</manifest> 
