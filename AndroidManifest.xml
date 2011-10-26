@@ -17,7 +17,7 @@
 				<action android:name="android.intent.action.CREATE_SHORTCUT" />
 			</intent-filter>
 		</activity>
-		<activity android:name="arnodenhond.mediashortcut.InfoActivity"
+		<activity android:name="arnodenhond.mediashortcut.InfoActivity" android:noHistory="true"
 			android:label="@string/mediashortcut" android:theme="@android:style/Theme.Dialog">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />

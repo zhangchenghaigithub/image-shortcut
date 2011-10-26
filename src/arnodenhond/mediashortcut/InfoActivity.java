@@ -23,6 +23,7 @@ public class InfoActivity extends Activity {
 		}
 		tv.setText(String.format(getString(R.string.info), version));
 		tv.setGravity(Gravity.CENTER);
+		tv.setPadding(10, 10, 10, 10);
 		Linkify.addLinks(tv, Linkify.WEB_URLS);
 		setContentView(tv);
 	}
