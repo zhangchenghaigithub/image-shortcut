@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="arnodenhond.imageshortcut" android:versionCode="2"
-	android:versionName="2">
+	package="arnodenhond.imageshortcut" android:versionCode="3"
+	android:versionName="3">
 	<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="7" />
-	<application android:icon="@drawable/imageshortcut"
-		android:label="@string/imageshortcut">
+	<application android:icon="@drawable/mediashortcut"
+		android:label="@string/mediashortcut">
 		<activity android:name=".ImageShortcut" android:label="@string/imageshortcut">
+			<intent-filter>
+				<action android:name="android.intent.action.CREATE_SHORTCUT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".VideoShortcut" android:label="@string/videoshortcut">
 			<intent-filter>
 				<action android:name="android.intent.action.CREATE_SHORTCUT" />
 			</intent-filter>

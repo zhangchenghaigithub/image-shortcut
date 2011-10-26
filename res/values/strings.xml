@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="mediashortcut">Media Shortcut</string>
     <string name="imageshortcut">Image Shortcut</string>
+    <string name="videoshortcut">Video Shortcut</string>
     <string name="selectimage">Select an Image..</string>
+    <string name="selectvideo">Select a Video..</string>
     <string name="shortcutadded">Shortcut Added</string>
     <string name="shortcutcanceled">Shortcut Canceled</string>
 </resources>
