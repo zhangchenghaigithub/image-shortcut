@@ -5,12 +5,12 @@
 	<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="7" />
 	<application android:icon="@drawable/mediashortcut"
 		android:label="@string/mediashortcut">
-		<activity android:name=".ImageShortcut" android:label="@string/imageshortcut">
+		<activity android:name="arnodenhond.mediashortcut.ImageShortcut" android:label="@string/imageshortcut">
 			<intent-filter>
 				<action android:name="android.intent.action.CREATE_SHORTCUT" />
 			</intent-filter>
 		</activity>
-		<activity android:name=".VideoShortcut" android:label="@string/videoshortcut">
+		<activity android:name="arnodenhond.mediashortcut.VideoShortcut" android:label="@string/videoshortcut">
 			<intent-filter>
 				<action android:name="android.intent.action.CREATE_SHORTCUT" />
 			</intent-filter>

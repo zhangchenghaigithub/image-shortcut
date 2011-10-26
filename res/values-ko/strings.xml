@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="imageshortcut">이미지 바로가기</string>
-    <string name="selectimage">이미지를 선택</string>
-    <string name="shortcutadded">단축키가 추가되었습니다</string>
-    <string name="shortcutcanceled">바로가기이 취소됨</string>
-</resources>

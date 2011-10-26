@@ -1,12 +1,21 @@
-package arnodenhond.imageshortcut;
+package arnodenhond.mediashortcut;
+
 
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.graphics.Bitmap.Config;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.PorterDuff.Mode;
+import android.graphics.PorterDuffXfermode;
+import android.graphics.Rect;
+import android.graphics.RectF;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Toast;
+import arnodenhond.imageshortcut.R;
 
 public abstract class MediaShortcut extends Activity {
 
@@ -16,18 +25,14 @@ public abstract class MediaShortcut extends Activity {
 
 	abstract String getName();
 
-	abstract Bitmap getThumbnail(int id);
-
-	// pick message
-	// done message
-	// cancel message
+	abstract Bitmap getThumbnail(String id);
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		Intent pickIntent = new Intent(Intent.ACTION_PICK, getContentUri());
 		startActivityForResult(pickIntent, Activity.RESULT_FIRST_USER);
-		Toast.makeText(this, R.string.selectimage, Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, R.string.select, Toast.LENGTH_SHORT).show();
 	}
 
 	@Override
@@ -41,8 +46,6 @@ public abstract class MediaShortcut extends Activity {
 			String title = cursor.getString(1);
 			cursor.close();
 
-			Bitmap thumbnail = getThumbnail(Integer.parseInt(mediaId));
-
 			Intent dataview = new Intent();
 			dataview.setData(pickedMedia.getData());
 			dataview.setAction(Intent.ACTION_VIEW);
@@ -50,7 +53,7 @@ public abstract class MediaShortcut extends Activity {
 
 			Intent result = new Intent();
 			result.putExtra(Intent.EXTRA_SHORTCUT_INTENT, dataview);
-			result.putExtra(Intent.EXTRA_SHORTCUT_ICON, thumbnail);
+			result.putExtra(Intent.EXTRA_SHORTCUT_ICON, getThumbnail(mediaId));
 			result.putExtra(Intent.EXTRA_SHORTCUT_NAME, title);
 			setResult(RESULT_OK, result);
 			Toast.makeText(this, R.string.shortcutadded, Toast.LENGTH_SHORT).show();
@@ -59,6 +62,27 @@ public abstract class MediaShortcut extends Activity {
 			Toast.makeText(this, R.string.shortcutcanceled, Toast.LENGTH_SHORT).show();
 		}
 		finish();
+	}
+
+	protected Bitmap roundify(Bitmap bitmap) {
+		Bitmap output = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight(), Config.ARGB_8888);
+		Canvas canvas = new Canvas(output);
+
+		final int color = 0xff424242;
+		final Paint paint = new Paint();
+		final Rect rect = new Rect(0, 0, bitmap.getWidth(), bitmap.getHeight());
+		final RectF rectF = new RectF(rect);
+		final float roundPx = 12;
+
+		paint.setAntiAlias(true);
+		canvas.drawARGB(0, 0, 0, 0);
+		paint.setColor(color);
+		canvas.drawRoundRect(rectF, roundPx, roundPx, paint);
+
+		paint.setXfermode(new PorterDuffXfermode(Mode.SRC_IN));
+		canvas.drawBitmap(bitmap, rect, rect, paint);
+
+		return output;
 	}
 
 }

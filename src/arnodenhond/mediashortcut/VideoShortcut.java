@@ -1,4 +1,4 @@
-package arnodenhond.imageshortcut;
+package arnodenhond.mediashortcut;
 
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -6,10 +6,8 @@ import android.net.Uri;
 public class VideoShortcut extends MediaShortcut {
 
 	@Override
-	Bitmap getThumbnail(int id) {
-		Bitmap thumbnail = android.provider.MediaStore.Video.Thumbnails.getThumbnail(getContentResolver(), id, android.provider.MediaStore.Video.Thumbnails.MICRO_KIND, null);
-		// TODO rounded corners
-		return thumbnail;
+	Bitmap getThumbnail(String id) {
+		return roundify(android.provider.MediaStore.Video.Thumbnails.getThumbnail(getContentResolver(), Integer.parseInt(id), android.provider.MediaStore.Video.Thumbnails.MICRO_KIND, null));
 	}
 
 	@Override

@@ -3,8 +3,7 @@
     <string name="mediashortcut">Media Shortcut</string>
     <string name="imageshortcut">Image Shortcut</string>
     <string name="videoshortcut">Video Shortcut</string>
-    <string name="selectimage">Select an Image..</string>
-    <string name="selectvideo">Select a Video..</string>
+    <string name="select">Select Shortcut</string>
     <string name="shortcutadded">Shortcut Added</string>
     <string name="shortcutcanceled">Shortcut Canceled</string>
 </resources>
