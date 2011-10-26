@@ -3,6 +3,7 @@
     <string name="mediashortcut">Media Shortcut</string>
     <string name="imageshortcut">Image Shortcut</string>
     <string name="videoshortcut">Video Shortcut</string>
+    <string name="cannotselect">Media Picker App Not Found!</string>
     <string name="select">Select Shortcut</string>
     <string name="shortcutadded">Shortcut Added</string>
     <string name="shortcutcanceled">Shortcut Canceled</string>

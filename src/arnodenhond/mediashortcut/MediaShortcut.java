@@ -1,6 +1,5 @@
 package arnodenhond.mediashortcut;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
@@ -31,8 +30,14 @@ public abstract class MediaShortcut extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		Intent pickIntent = new Intent(Intent.ACTION_PICK, getContentUri());
-		startActivityForResult(pickIntent, Activity.RESULT_FIRST_USER);
-		Toast.makeText(this, R.string.select, Toast.LENGTH_SHORT).show();
+		if (getPackageManager().queryIntentActivities(pickIntent, 0).size() > 0) {
+			startActivityForResult(pickIntent, Activity.RESULT_FIRST_USER);
+			Toast.makeText(this, R.string.select, Toast.LENGTH_SHORT).show();
+		} else {
+			setResult(RESULT_CANCELED);
+			Toast.makeText(this, R.string.cannotselect, Toast.LENGTH_SHORT).show();
+			finish();
+		}
 	}
 
 	@Override
