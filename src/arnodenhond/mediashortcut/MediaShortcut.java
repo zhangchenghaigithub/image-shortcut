@@ -18,8 +18,6 @@ import arnodenhond.imageshortcut.R;
 
 public abstract class MediaShortcut extends Activity {
 
-	abstract Uri getContentUri();
-
 	abstract String getId();
 
 	abstract String getName();
@@ -49,14 +47,15 @@ public abstract class MediaShortcut extends Activity {
 		if (resultCode == Activity.RESULT_OK) {
 			Uri data = pickedMedia.getData();
 			String mediaId = data.getLastPathSegment();
-
-			Cursor cursor = managedQuery(getContentUri(), new String[] { getId(), getName() }, getId() + "=?", new String[] { mediaId }, null);
+			Uri contentUri = Uri.parse(data.toString().substring(0, data.toString().lastIndexOf('/')));
+			
+			Cursor cursor = managedQuery(contentUri, new String[] { getId(), getName() }, getId() + "=?", new String[] { mediaId }, null);
 			cursor.moveToFirst();
 			String title = cursor.getString(1);
 			cursor.close();
 
 			Intent dataview = new Intent();
-			dataview.setData(pickedMedia.getData());
+			dataview.setData(data);
 			dataview.setAction(Intent.ACTION_VIEW);
 			dataview.setFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
 

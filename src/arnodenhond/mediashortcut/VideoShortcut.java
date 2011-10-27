@@ -11,11 +11,6 @@ public class VideoShortcut extends MediaShortcut {
 	}
 
 	@Override
-	Uri getContentUri() {
-		return android.provider.MediaStore.Video.Media.EXTERNAL_CONTENT_URI;
-	}
-
-	@Override
 	String getId() {
 		return android.provider.MediaStore.Video.Media._ID;
 	}
@@ -28,7 +23,6 @@ public class VideoShortcut extends MediaShortcut {
 	@Override
 	String getType() {
 		return "video/*";
-		//return android.provider.MediaStore.Video.Media.CONTENT_TYPE;
 	}
 
 }
