@@ -25,4 +25,10 @@ public class ImageShortcut extends MediaShortcut {
 		return android.provider.MediaStore.Images.Media.DISPLAY_NAME;
 	}
 
+	@Override
+	String getType() {
+		return "image/*";
+		//return android.provider.MediaStore.Images.Media.CONTENT_TYPE;
+	}
+
 }

@@ -25,4 +25,10 @@ public class VideoShortcut extends MediaShortcut {
 		return android.provider.MediaStore.Video.Media.DISPLAY_NAME;
 	}
 
+	@Override
+	String getType() {
+		return "video/*";
+		//return android.provider.MediaStore.Video.Media.CONTENT_TYPE;
+	}
+
 }

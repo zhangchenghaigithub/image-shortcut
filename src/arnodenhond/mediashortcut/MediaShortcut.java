@@ -25,11 +25,15 @@ public abstract class MediaShortcut extends Activity {
 	abstract String getName();
 
 	abstract Bitmap getThumbnail(String id);
+	
+	abstract String getType();
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		Intent pickIntent = new Intent(Intent.ACTION_PICK, getContentUri());
+		Intent pickIntent = new Intent(Intent.ACTION_GET_CONTENT);
+		pickIntent.setType(getType());
+
 		if (getPackageManager().queryIntentActivities(pickIntent, 0).size() > 0) {
 			startActivityForResult(pickIntent, Activity.RESULT_FIRST_USER);
 			Toast.makeText(this, R.string.select, Toast.LENGTH_SHORT).show();
