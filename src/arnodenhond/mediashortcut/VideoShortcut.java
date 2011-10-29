@@ -1,13 +1,12 @@
 package arnodenhond.mediashortcut;
 
 import android.graphics.Bitmap;
-import android.net.Uri;
 
 public class VideoShortcut extends MediaShortcut {
 
 	@Override
 	Bitmap getThumbnail(String id) {
-		return roundify(android.provider.MediaStore.Video.Thumbnails.getThumbnail(getContentResolver(), Integer.parseInt(id), android.provider.MediaStore.Video.Thumbnails.MICRO_KIND, null));
+		return iconify(android.provider.MediaStore.Video.Thumbnails.getThumbnail(getContentResolver(), Integer.parseInt(id), android.provider.MediaStore.Video.Thumbnails.MICRO_KIND, null));
 	}
 
 	@Override

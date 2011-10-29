@@ -7,5 +7,7 @@
     <string name="select">Select Shortcut</string>
     <string name="shortcutadded">Shortcut Added</string>
     <string name="shortcutcanceled">Shortcut Canceled</string>
+    <string name="settitle">Shortcut Title</string>
+    <string name="ok">Create Shortcut</string>
     <string name="info">Media Shortcut v%1$d by Arno den Hond\ncode.google.com/p/image-shortcut</string>
 </resources>
