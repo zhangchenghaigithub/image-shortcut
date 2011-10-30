@@ -2,7 +2,6 @@ package arnodenhond.mediashortcut;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
 import android.content.Intent;
@@ -21,7 +20,6 @@ import android.os.Bundle;
 import android.text.InputType;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
-import android.view.ViewGroup.LayoutParams;
 import android.widget.EditText;
 import android.widget.Toast;
 import arnodenhond.imageshortcut.R;
@@ -32,7 +30,7 @@ public abstract class MediaShortcut extends Activity {
 
 	abstract String getName();
 
-	abstract Bitmap getThumbnail(String id);
+	abstract Bitmap getThumbnail(Uri data);
 
 	abstract String getType();
 
@@ -51,45 +49,34 @@ public abstract class MediaShortcut extends Activity {
 			finish();
 		}
 	}
-	
+
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent pickedMedia) {
 		if (resultCode == Activity.RESULT_OK) {
 			Uri data = pickedMedia.getData();
-			final String mediaId = data.getLastPathSegment();
-			Uri contentUri = Uri.parse(data.toString().substring(0, data.toString().lastIndexOf('/')));
 
-			Cursor cursor = managedQuery(contentUri, new String[] { getId(), getName() }, getId() + "=?", new String[] { mediaId }, null);
-			cursor.moveToFirst();
-			String defaultTitle = cursor.getString(1);
-			cursor.close();
-
-			final Bitmap bitmap = getThumbnail(mediaId);
-
-			final Intent dataview = new Intent();
-			dataview.setData(data);
-			dataview.setAction(Intent.ACTION_VIEW);
-			dataview.setFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+			final String defaultTitle = getTitleString(data);
+			final Bitmap bitmap = getThumbnail(data);
+			final Intent dataview = getViewIntent(data);
 
 			AlertDialog.Builder titleAlert = new AlertDialog.Builder(this);
 			titleAlert.setTitle(R.string.settitle);
-			final EditText title = new EditText(this);
-			title.setText(defaultTitle);
-			title.setInputType(InputType.TYPE_TEXT_FLAG_CAP_WORDS);
-			title.selectAll();
-			title.setGravity(Gravity.CENTER);
-			title.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
+			final EditText title = getTitleEditText(defaultTitle);
 			titleAlert.setView(title);
 			titleAlert.setIcon(new BitmapDrawable(bitmap));
 			titleAlert.setNeutralButton(R.string.ok, new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog, int whichButton) {
+					setResult(RESULT_OK, getResultIntent(dataview, bitmap, title.getText().toString()));
+					Toast.makeText(MediaShortcut.this, R.string.shortcutadded, Toast.LENGTH_SHORT).show();
+					finish();
+				}
+
+				private Intent getResultIntent(Intent dataview, Bitmap bitmap, String title) {
 					Intent result = new Intent();
 					result.putExtra(Intent.EXTRA_SHORTCUT_INTENT, dataview);
 					result.putExtra(Intent.EXTRA_SHORTCUT_ICON, bitmap);
-					result.putExtra(Intent.EXTRA_SHORTCUT_NAME, title.getText().toString());
-					setResult(RESULT_OK, result);
-					Toast.makeText(MediaShortcut.this, R.string.shortcutadded, Toast.LENGTH_SHORT).show();
-					finish();
+					result.putExtra(Intent.EXTRA_SHORTCUT_NAME, title);
+					return result;
 				}
 			});
 			titleAlert.setOnCancelListener(new OnCancelListener() {
@@ -107,14 +94,39 @@ public abstract class MediaShortcut extends Activity {
 		}
 	}
 
+	private EditText getTitleEditText(String defaultTitle) {
+		EditText title = new EditText(this);
+		title.setText(defaultTitle);
+		title.setInputType(InputType.TYPE_TEXT_FLAG_CAP_WORDS);
+		title.selectAll();
+		title.setGravity(Gravity.CENTER);
+		return title;
+	}
+
+	private Intent getViewIntent(Uri data) {
+		Intent viewData = new Intent(Intent.ACTION_VIEW, data);
+		viewData.setFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+		return viewData;
+	}
+
+	private String getTitleString(Uri data) {
+		Uri contentUri = Uri.parse(data.toString().substring(0, data.toString().lastIndexOf('/')));
+		Cursor cursor = managedQuery(contentUri, new String[] { getId(), getName() }, getId() + "=?", new String[] { data.getLastPathSegment() }, null);
+		if (cursor.isAfterLast())
+			return getString(R.string.settitle);
+		cursor.moveToFirst();
+		String defaultTitle = cursor.getString(1);
+		cursor.close();
+		return defaultTitle;
+	}
+
 	protected Bitmap iconify(Bitmap bitmap) {
-		if (bitmap==null)
+		if (bitmap == null)
 			return bitmap;
-		bitmap = Bitmap.createScaledBitmap(bitmap, getIconSize(), getIconSize(), false);
+		bitmap = Bitmap.createScaledBitmap(bitmap, getIconSize(), getIconSize(), true);
 		Bitmap output = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight(), Config.ARGB_8888);
 		Canvas canvas = new Canvas(output);
 
-		final int color = 0xff424242;
 		final Paint paint = new Paint();
 		final Rect rect = new Rect(0, 0, bitmap.getWidth(), bitmap.getHeight());
 		final RectF rectF = new RectF(rect);
@@ -122,7 +134,7 @@ public abstract class MediaShortcut extends Activity {
 
 		paint.setAntiAlias(true);
 		canvas.drawARGB(0, 0, 0, 0);
-		paint.setColor(color);
+		paint.setColor(0xff424242);
 		canvas.drawRoundRect(rectF, roundPx, roundPx, paint);
 
 		paint.setXfermode(new PorterDuffXfermode(Mode.SRC_IN));
@@ -133,9 +145,9 @@ public abstract class MediaShortcut extends Activity {
 
 	private DisplayMetrics metrics;
 	private static final int DENSITY_XHIGH = 320;
-	
+
 	private int getIconSize() {
-		
+
 		if (metrics == null) {
 			metrics = new DisplayMetrics();
 			getWindowManager().getDefaultDisplay().getMetrics(metrics);

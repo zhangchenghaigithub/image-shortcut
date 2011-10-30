@@ -1,12 +1,13 @@
 package arnodenhond.mediashortcut;
 
 import android.graphics.Bitmap;
+import android.net.Uri;
 
 public class ImageShortcut extends MediaShortcut {
 
 	@Override
-	Bitmap getThumbnail(String id) {
-		return iconify(android.provider.MediaStore.Images.Thumbnails.getThumbnail(getContentResolver(), Integer.parseInt(id), android.provider.MediaStore.Images.Thumbnails.MICRO_KIND, null));
+	Bitmap getThumbnail(Uri data) {
+		return iconify(android.provider.MediaStore.Images.Thumbnails.getThumbnail(getContentResolver(), Integer.parseInt(data.getLastPathSegment()), android.provider.MediaStore.Images.Thumbnails.MICRO_KIND, null));
 	}
 
 	@Override
