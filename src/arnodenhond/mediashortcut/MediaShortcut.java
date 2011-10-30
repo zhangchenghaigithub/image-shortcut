@@ -131,10 +131,11 @@ public abstract class MediaShortcut extends Activity {
 		return output;
 	}
 
-	DisplayMetrics metrics;
-
+	private DisplayMetrics metrics;
+	private static final int DENSITY_XHIGH = 320;
+	
 	private int getIconSize() {
-		final int DENSITY_XHIGH = 320;
+		
 		if (metrics == null) {
 			metrics = new DisplayMetrics();
 			getWindowManager().getDefaultDisplay().getMetrics(metrics);

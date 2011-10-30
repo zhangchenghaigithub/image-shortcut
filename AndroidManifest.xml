@@ -5,6 +5,8 @@
 	<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="7" />
 	<application android:icon="@drawable/mediashortcut"
 		android:label="@string/mediashortcut">
+		<meta-data android:name="txt.humans" android:value="Arno den Hond"/>
+		<meta-data android:name="url" android:value="code.google.com/p/image-shortcut/"/>
 		<activity android:name="arnodenhond.mediashortcut.ImageShortcut" android:configChanges="orientation|keyboardHidden" android:theme="@android:style/Theme.Dialog"
 			android:label="@string/imageshortcut">
 			<intent-filter>
