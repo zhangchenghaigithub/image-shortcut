@@ -40,7 +40,7 @@ public abstract class MediaShortcut extends Activity {
 		Intent pickIntent = new Intent(Intent.ACTION_GET_CONTENT);
 		pickIntent.setType(getType());
 
-		if (getPackageManager().queryIntentActivities(pickIntent, 0).size() > 0) {
+		if (!getPackageManager().queryIntentActivities(pickIntent, 0).isEmpty()) {
 			startActivityForResult(pickIntent, Activity.RESULT_FIRST_USER);
 			Toast.makeText(this, R.string.select, Toast.LENGTH_SHORT).show();
 		} else {
