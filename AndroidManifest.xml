@@ -1,31 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="arnodenhond.imageshortcut" android:versionCode="7"
-	android:versionName="7">
-	<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="7" />
-	<application android:icon="@drawable/mediashortcut"
-		android:label="@string/mediashortcut">
-		<meta-data android:name="txt.humans" android:value="Arno den Hond"/>
-		<meta-data android:name="url" android:value="code.google.com/p/image-shortcut/"/>
-		<activity android:name="arnodenhond.mediashortcut.ImageShortcut" android:configChanges="orientation|keyboardHidden" android:theme="@android:style/Theme.Dialog"
-			android:label="@string/imageshortcut">
-			<intent-filter>
-				<action android:name="android.intent.action.CREATE_SHORTCUT" />
-			</intent-filter>
-		</activity>
-		<activity android:name="arnodenhond.mediashortcut.VideoShortcut" android:configChanges="orientation|keyboardHidden" android:theme="@android:style/Theme.Dialog"
-			android:label="@string/videoshortcut">
-			<intent-filter>
-				<action android:name="android.intent.action.CREATE_SHORTCUT" />
-			</intent-filter>
-		</activity>
-		<activity android:name="arnodenhond.mediashortcut.InfoActivity" android:noHistory="true"
-			android:label="@string/mediashortcut" android:theme="@android:style/Theme.Dialog">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="android.intent.category.INFO" />
-			</intent-filter>
-		</activity>
-	</application>
-	<uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
-</manifest> 
+    package="arnodenhond.imageshortcut"
+    android:versionCode="7"
+    android:versionName="7" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="7" />
+
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:icon="@drawable/mediashortcut"
+        android:label="@string/mediashortcut" >
+        <meta-data
+            android:name="txt.humans"
+            android:value="Arno den Hond" />
+        <meta-data
+            android:name="url"
+            android:value="code.google.com/p/image-shortcut/" />
+
+        <activity
+            android:name="arnodenhond.mediashortcut.addshortcut.AddImage"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/imageshortcut"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="arnodenhond.mediashortcut.addshortcut.AddVideo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/videoshortcut"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="arnodenhond.mediashortcut.InfoActivity"
+            android:label="@string/mediashortcut"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.INFO" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="arnodenhond.mediashortcut.shareshortcut.ShareImage"
+            android:label="@string/mediashortcut"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="arnodenhond.mediashortcut.shareshortcut.ShareVideo"
+            android:label="@string/mediashortcut"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

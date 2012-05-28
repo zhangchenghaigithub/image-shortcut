@@ -1,13 +1,13 @@
 
-package arnodenhond.mediashortcut;
+package arnodenhond.mediashortcut.addshortcut;
 
 import android.graphics.Bitmap;
 import android.net.Uri;
 
-public class ImageShortcut extends MediaShortcut {
+public class AddImage extends AddShortcut {
 
     @Override
-    Bitmap getThumbnail(Uri data) {
+    public Bitmap getThumbnail(Uri data) {
         try {
             return iconify(android.provider.MediaStore.Images.Thumbnails.getThumbnail(getContentResolver(), Integer.parseInt(data.getLastPathSegment()), android.provider.MediaStore.Images.Thumbnails.MICRO_KIND, null));
         } catch (Throwable t) {
@@ -16,12 +16,12 @@ public class ImageShortcut extends MediaShortcut {
     }
 
     @Override
-    String getId() {
+    public String getId() {
         return android.provider.MediaStore.Images.Media._ID;
     }
 
     @Override
-    String getName() {
+    public String getName() {
         return android.provider.MediaStore.Images.Media.DISPLAY_NAME;
     }
 
