@@ -113,6 +113,8 @@ public abstract class MediaShortcut extends Activity {
     private Intent getViewIntent(Uri data) {
         Intent viewData = new Intent(Intent.ACTION_VIEW, data);
         viewData.setFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+        viewData.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        viewData.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         return viewData;
     }
 
