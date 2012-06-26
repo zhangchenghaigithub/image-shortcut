@@ -10,20 +10,9 @@
 
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
 
-    <uses-feature
-        android:name="android.hardware.touchscreen"
-        android:required="false" />
-
     <application
         android:icon="@drawable/mediashortcut"
         android:label="@string/mediashortcut" >
-        <meta-data
-            android:name="txt.humans"
-            android:value="Arno den Hond" />
-        <meta-data
-            android:name="url"
-            android:value="code.google.com/p/image-shortcut/" />
-
         <activity
             android:name="arnodenhond.mediashortcut.addshortcut.AddImage"
             android:configChanges="orientation|keyboardHidden"
@@ -51,6 +40,15 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.INFO" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="arnodenhond.mediashortcut.Launcher"
+            android:theme="@android:style/Theme.NoDisplay" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity

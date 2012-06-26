@@ -10,5 +10,7 @@
     <string name="couldnotgetthumbnail">Could Not Get Thumbnail</string>
     <string name="settitle">Shortcut Title</string>
     <string name="ok">Create Shortcut</string>
-    <string name="info">Image and Video Shortcut v%1$d by Arno den Hond\ncode.google.com/p/image-shortcut</string>
+    <string name="header">Image Shortcut v%1$d by Arno den Hond © 2012</string>
+    <string name="footer">Source code.google.com/p/image-shortcut \n Ad android.arnodenhond.com/components/image-shortcut \n Feedback arnodenhond+IS@gmail.com</string>
+    <string name="moreapps">My other apps</string>
 </resources>
