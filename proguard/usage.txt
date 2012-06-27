@@ -1,0 +1,20 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+arnodenhond.imageshortcut.BuildConfig
+arnodenhond.imageshortcut.R
+arnodenhond.imageshortcut.R$attr
+arnodenhond.imageshortcut.R$drawable
+arnodenhond.imageshortcut.R$id
+arnodenhond.imageshortcut.R$layout
+arnodenhond.imageshortcut.R$string
+arnodenhond.imageshortcut.R$style
+arnodenhond.mediashortcut.MediaShortcut:
+    private static final int DENSITY_XHIGH
+arnodenhond.mediashortcut.addshortcut.AddShortcut:
+    private static final int REQUEST_PICK
+    private static final int REQUEST_CROP
+    private static final java.lang.String ACTION_CROP
+arnodenhond.mediashortcut.shareshortcut.ShareShortcut:
+    private static final java.lang.String ACTION_CROP
+    private static final java.lang.String ACTION_INSTALL_SHORTCUT
+    private static final int REQUEST_CROP

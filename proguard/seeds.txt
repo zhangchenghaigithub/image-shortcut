@@ -1,0 +1,10 @@
+arnodenhond.mediashortcut.InfoActivity
+arnodenhond.mediashortcut.InfoActivity: void startmarket(android.view.View)
+arnodenhond.mediashortcut.Launcher
+arnodenhond.mediashortcut.MediaShortcut
+arnodenhond.mediashortcut.addshortcut.AddImage
+arnodenhond.mediashortcut.addshortcut.AddShortcut
+arnodenhond.mediashortcut.addshortcut.AddVideo
+arnodenhond.mediashortcut.shareshortcut.ShareImage
+arnodenhond.mediashortcut.shareshortcut.ShareShortcut
+arnodenhond.mediashortcut.shareshortcut.ShareVideo

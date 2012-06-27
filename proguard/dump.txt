@@ -1,0 +1,3063 @@
+_____________________________________________________________________
++ Program class: arnodenhond/mediashortcut/InfoActivity
+  Superclass:    android/app/Activity
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class arnodenhond.mediashortcut.InfoActivity extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 105):
+  + Integer [524288]
+  + Integer [2130903040]
+  + Integer [2131034123]
+  + Integer [2131099648]
+  + String [android.intent.action.VIEW]
+  + String [market://search?q=pub:Arno den Hond]
+  + Class [android/app/Activity]
+  + Class [android/content/Intent]
+  + Class [android/content/pm/PackageInfo]
+  + Class [android/content/pm/PackageManager]
+  + Class [android/content/pm/PackageManager$NameNotFoundException]
+  + Class [android/net/Uri]
+  + Class [android/widget/TextView]
+  + Class [arnodenhond/mediashortcut/InfoActivity]
+  + Class [java/lang/Integer]
+  + Class [java/lang/Object]
+  + Class [java/lang/String]
+  + Fieldref [android/content/pm/PackageInfo.versionCode I]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
+  + Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.setData (Landroid/net/Uri;)Landroid/content/Intent;]
+  + Methodref [android/content/pm/PackageManager.getPackageInfo (Ljava/lang/String;I)Landroid/content/pm/PackageInfo;]
+  + Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
+  + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+  + Methodref [arnodenhond/mediashortcut/InfoActivity.findViewById (I)Landroid/view/View;]
+  + Methodref [arnodenhond/mediashortcut/InfoActivity.getPackageManager ()Landroid/content/pm/PackageManager;]
+  + Methodref [arnodenhond/mediashortcut/InfoActivity.getPackageName ()Ljava/lang/String;]
+  + Methodref [arnodenhond/mediashortcut/InfoActivity.getString (I)Ljava/lang/String;]
+  + Methodref [arnodenhond/mediashortcut/InfoActivity.requestWindowFeature (I)Z]
+  + Methodref [arnodenhond/mediashortcut/InfoActivity.setContentView (I)V]
+  + Methodref [arnodenhond/mediashortcut/InfoActivity.startActivity (Landroid/content/Intent;)V]
+  + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+  + Methodref [java/lang/String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [addFlags (I)Landroid/content/Intent;]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+  + NameAndType [getPackageInfo (Ljava/lang/String;I)Landroid/content/pm/PackageInfo;]
+  + NameAndType [getPackageManager ()Landroid/content/pm/PackageManager;]
+  + NameAndType [getPackageName ()Ljava/lang/String;]
+  + NameAndType [getString (I)Ljava/lang/String;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [parse (Ljava/lang/String;)Landroid/net/Uri;]
+  + NameAndType [requestWindowFeature (I)Z]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setData (Landroid/net/Uri;)Landroid/content/Intent;]
+  + NameAndType [setText (Ljava/lang/CharSequence;)V]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + NameAndType [valueOf (I)Ljava/lang/Integer;]
+  + NameAndType [versionCode I]
+  + Utf8 [()Landroid/content/pm/PackageManager;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(I)Landroid/content/Intent;]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)Ljava/lang/Integer;]
+  + Utf8 [(I)Ljava/lang/String;]
+  + Utf8 [(I)V]
+  + Utf8 [(I)Z]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/net/Uri;)Landroid/content/Intent;]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)V]
+  + Utf8 [(Ljava/lang/String;)Landroid/net/Uri;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;]
+  + Utf8 [(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [addFlags]
+  + Utf8 [android.intent.action.VIEW]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/content/pm/PackageInfo]
+  + Utf8 [android/content/pm/PackageManager]
+  + Utf8 [android/content/pm/PackageManager$NameNotFoundException]
+  + Utf8 [android/net/Uri]
+  + Utf8 [android/widget/TextView]
+  + Utf8 [arnodenhond/mediashortcut/InfoActivity]
+  + Utf8 [findViewById]
+  + Utf8 [format]
+  + Utf8 [getPackageInfo]
+  + Utf8 [getPackageManager]
+  + Utf8 [getPackageName]
+  + Utf8 [getString]
+  + Utf8 [java/lang/Integer]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/String]
+  + Utf8 [market://search?q=pub:Arno den Hond]
+  + Utf8 [onCreate]
+  + Utf8 [parse]
+  + Utf8 [requestWindowFeature]
+  + Utf8 [setContentView]
+  + Utf8 [setData]
+  + Utf8 [setText]
+  + Utf8 [startActivity]
+  + Utf8 [startmarket]
+  + Utf8 [valueOf]
+  + Utf8 [versionCode]
+
+Fields (count = 0):
+
+Methods (count = 3):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public InfoActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #19
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x4
+      = protected void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 74, locals = 3, stack = 6):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #20
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] iconst_1
+      [7] invokevirtual #31
+        + Methodref [arnodenhond/mediashortcut/InfoActivity.requestWindowFeature (I)Z]
+      [10] pop
+      [11] aload_0 v0
+      [12] ldc #2
+        + Integer [2130903040]
+      [14] invokevirtual #32
+        + Methodref [arnodenhond/mediashortcut/InfoActivity.setContentView (I)V]
+      [17] aload_0 v0
+      [18] ldc #4
+        + Integer [2131099648]
+      [20] invokevirtual #27
+        + Methodref [arnodenhond/mediashortcut/InfoActivity.findViewById (I)Landroid/view/View;]
+      [23] checkcast #13
+        + Class [android/widget/TextView]
+      [26] astore_1 v1
+      [27] iconst_0
+      [28] istore_2 v2
+      [29] aload_0 v0
+      [30] invokevirtual #28
+        + Methodref [arnodenhond/mediashortcut/InfoActivity.getPackageManager ()Landroid/content/pm/PackageManager;]
+      [33] aload_0 v0
+      [34] invokevirtual #29
+        + Methodref [arnodenhond/mediashortcut/InfoActivity.getPackageName ()Ljava/lang/String;]
+      [37] iconst_0
+      [38] invokevirtual #24
+        + Methodref [android/content/pm/PackageManager.getPackageInfo (Ljava/lang/String;I)Landroid/content/pm/PackageInfo;]
+      [41] getfield #18
+        + Fieldref [android/content/pm/PackageInfo.versionCode I]
+      [44] istore_2 v2
+      [45] goto +4 (target=49)
+      [48] pop
+      [49] aload_1 v1
+      [50] aload_0 v0
+      [51] ldc #3
+        + Integer [2131034123]
+      [53] invokevirtual #30
+        + Methodref [arnodenhond/mediashortcut/InfoActivity.getString (I)Ljava/lang/String;]
+      [56] iconst_1
+      [57] anewarray #16
+        + Class [java/lang/Object]
+      [60] dup
+      [61] iconst_0
+      [62] iload_2 v2
+      [63] invokestatic #34
+        + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+      [66] aastore
+      [67] invokestatic #35
+        + Methodref [java/lang/String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+      [70] invokevirtual #26
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [73] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (29 -> 45: 48):
+      + Class [android/content/pm/PackageManager$NameNotFoundException]
+      Code attribute attributes (attribute count = 0):
+  + Method:       startmarket(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void startmarket(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 33, locals = 2, stack = 3):
+      [0] new #8
+        + Class [android/content/Intent]
+      [3] dup
+      [4] ldc #5
+        + String [android.intent.action.VIEW]
+      [6] invokespecial #21
+        + Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
+      [9] dup
+      [10] astore_1 v1
+      [11] ldc #1
+        + Integer [524288]
+      [13] invokevirtual #22
+        + Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
+      [16] pop
+      [17] aload_1 v1
+      [18] ldc #6
+        + String [market://search?q=pub:Arno den Hond]
+      [20] invokestatic #25
+        + Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
+      [23] invokevirtual #23
+        + Methodref [android/content/Intent.setData (Landroid/net/Uri;)Landroid/content/Intent;]
+      [26] pop
+      [27] aload_0 v0
+      [28] aload_1 v1
+      [29] invokevirtual #33
+        + Methodref [arnodenhond/mediashortcut/InfoActivity.startActivity (Landroid/content/Intent;)V]
+      [32] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: arnodenhond/mediashortcut/Launcher
+  Superclass:    android/app/Activity
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class arnodenhond.mediashortcut.Launcher extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 41):
+  + Class [android/app/Activity]
+  + Class [android/content/ComponentName]
+  + Class [android/content/Intent]
+  + Class [android/content/pm/PackageManager]
+  + Class [arnodenhond/mediashortcut/InfoActivity]
+  + Class [arnodenhond/mediashortcut/Launcher]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/content/ComponentName.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [android/content/pm/PackageManager.setComponentEnabledSetting (Landroid/content/ComponentName;II)V]
+  + Methodref [arnodenhond/mediashortcut/Launcher.finish ()V]
+  + Methodref [arnodenhond/mediashortcut/Launcher.getPackageManager ()Landroid/content/pm/PackageManager;]
+  + Methodref [arnodenhond/mediashortcut/Launcher.startActivity (Landroid/content/Intent;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + NameAndType [finish ()V]
+  + NameAndType [getPackageManager ()Landroid/content/pm/PackageManager;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [setComponentEnabledSetting (Landroid/content/ComponentName;II)V]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + Utf8 [()Landroid/content/pm/PackageManager;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/ComponentName;II)V]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/content/ComponentName]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/content/pm/PackageManager]
+  + Utf8 [arnodenhond/mediashortcut/InfoActivity]
+  + Utf8 [arnodenhond/mediashortcut/Launcher]
+  + Utf8 [finish]
+  + Utf8 [getPackageManager]
+  + Utf8 [onCreate]
+  + Utf8 [setComponentEnabledSetting]
+  + Utf8 [startActivity]
+
+Fields (count = 0):
+
+Methods (count = 2):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public Launcher()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #7
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x4
+      = protected void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 43, locals = 2, stack = 5):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #8
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] new #3
+        + Class [android/content/Intent]
+      [9] dup
+      [10] aload_0 v0
+      [11] ldc #5
+        + Class [arnodenhond/mediashortcut/InfoActivity]
+      [13] invokespecial #10
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [16] invokevirtual #14
+        + Methodref [arnodenhond/mediashortcut/Launcher.startActivity (Landroid/content/Intent;)V]
+      [19] aload_0 v0
+      [20] invokevirtual #13
+        + Methodref [arnodenhond/mediashortcut/Launcher.getPackageManager ()Landroid/content/pm/PackageManager;]
+      [23] new #2
+        + Class [android/content/ComponentName]
+      [26] dup
+      [27] aload_0 v0
+      [28] ldc #6
+        + Class [arnodenhond/mediashortcut/Launcher]
+      [30] invokespecial #9
+        + Methodref [android/content/ComponentName.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [33] iconst_2
+      [34] iconst_1
+      [35] invokevirtual #11
+        + Methodref [android/content/pm/PackageManager.setComponentEnabledSetting (Landroid/content/ComponentName;II)V]
+      [38] aload_0 v0
+      [39] invokevirtual #12
+        + Methodref [arnodenhond/mediashortcut/Launcher.finish ()V]
+      [42] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: arnodenhond/mediashortcut/MediaShortcut
+  Superclass:    android/app/Activity
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x421
+    = public abstract class arnodenhond.mediashortcut.MediaShortcut extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 220):
+  + Integer [-12434878]
+  + Integer [67108864]
+  + Integer [268435456]
+  + Integer [2131034121]
+  + String [=?]
+  + String [android.intent.action.VIEW]
+  + Class [android/app/Activity]
+  + Class [android/content/Intent]
+  + Class [android/database/Cursor]
+  + Class [android/graphics/Bitmap]
+  + Class [android/graphics/Bitmap$Config]
+  + Class [android/graphics/Canvas]
+  + Class [android/graphics/Paint]
+  + Class [android/graphics/PorterDuff$Mode]
+  + Class [android/graphics/PorterDuffXfermode]
+  + Class [android/graphics/Rect]
+  + Class [android/graphics/RectF]
+  + Class [android/net/Uri]
+  + Class [android/util/DisplayMetrics]
+  + Class [android/view/Display]
+  + Class [android/view/WindowManager]
+  + Class [android/widget/EditText]
+  + Class [arnodenhond/mediashortcut/MediaShortcut]
+  + Class [java/lang/String]
+  + Class [java/lang/StringBuilder]
+  + Class [java/lang/Throwable]
+  + Fieldref [android/graphics/Bitmap$Config.ARGB_8888 Landroid/graphics/Bitmap$Config;]
+  + Fieldref [android/graphics/PorterDuff$Mode.SRC_IN Landroid/graphics/PorterDuff$Mode;]
+  + Fieldref [android/util/DisplayMetrics.densityDpi I]
+  + Fieldref [arnodenhond/mediashortcut/MediaShortcut.a Landroid/util/DisplayMetrics;]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/content/Intent.<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+  + Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
+  + Methodref [android/graphics/Bitmap.createBitmap (IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;]
+  + Methodref [android/graphics/Bitmap.createScaledBitmap (Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;]
+  + Methodref [android/graphics/Bitmap.getHeight ()I]
+  + Methodref [android/graphics/Bitmap.getWidth ()I]
+  + Methodref [android/graphics/Canvas.<init> (Landroid/graphics/Bitmap;)V]
+  + Methodref [android/graphics/Canvas.drawARGB (IIII)V]
+  + Methodref [android/graphics/Canvas.drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+  + Methodref [android/graphics/Canvas.drawRoundRect (Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V]
+  + Methodref [android/graphics/Paint.<init> ()V]
+  + Methodref [android/graphics/Paint.setAntiAlias (Z)V]
+  + Methodref [android/graphics/Paint.setColor (I)V]
+  + Methodref [android/graphics/Paint.setXfermode (Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;]
+  + Methodref [android/graphics/PorterDuffXfermode.<init> (Landroid/graphics/PorterDuff$Mode;)V]
+  + Methodref [android/graphics/Rect.<init> (IIII)V]
+  + Methodref [android/graphics/RectF.<init> (Landroid/graphics/Rect;)V]
+  + Methodref [android/net/Uri.getLastPathSegment ()Ljava/lang/String;]
+  + Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
+  + Methodref [android/net/Uri.toString ()Ljava/lang/String;]
+  + Methodref [android/util/DisplayMetrics.<init> ()V]
+  + Methodref [android/view/Display.getMetrics (Landroid/util/DisplayMetrics;)V]
+  + Methodref [android/widget/EditText.<init> (Landroid/content/Context;)V]
+  + Methodref [android/widget/EditText.selectAll ()V]
+  + Methodref [android/widget/EditText.setGravity (I)V]
+  + Methodref [android/widget/EditText.setInputType (I)V]
+  + Methodref [android/widget/EditText.setText (Ljava/lang/CharSequence;)V]
+  + Methodref [arnodenhond/mediashortcut/MediaShortcut.a ()Ljava/lang/String;]
+  + Methodref [arnodenhond/mediashortcut/MediaShortcut.b ()Ljava/lang/String;]
+  + Methodref [arnodenhond/mediashortcut/MediaShortcut.c ()I]
+  + Methodref [arnodenhond/mediashortcut/MediaShortcut.getString (I)Ljava/lang/String;]
+  + Methodref [arnodenhond/mediashortcut/MediaShortcut.getWindowManager ()Landroid/view/WindowManager;]
+  + Methodref [arnodenhond/mediashortcut/MediaShortcut.managedQuery (Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;]
+  + Methodref [java/lang/String.lastIndexOf (I)I]
+  + Methodref [java/lang/String.substring (II)Ljava/lang/String;]
+  + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
+  + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + InterfaceMethodref [android/database/Cursor.close ()V]
+  + InterfaceMethodref [android/database/Cursor.getString (I)Ljava/lang/String;]
+  + InterfaceMethodref [android/database/Cursor.isAfterLast ()Z]
+  + InterfaceMethodref [android/database/Cursor.moveToFirst ()Z]
+  + InterfaceMethodref [android/view/WindowManager.getDefaultDisplay ()Landroid/view/Display;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (IIII)V]
+  + NameAndType [<init> (Landroid/content/Context;)V]
+  + NameAndType [<init> (Landroid/graphics/Bitmap;)V]
+  + NameAndType [<init> (Landroid/graphics/PorterDuff$Mode;)V]
+  + NameAndType [<init> (Landroid/graphics/Rect;)V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+  + NameAndType [ARGB_8888 Landroid/graphics/Bitmap$Config;]
+  + NameAndType [SRC_IN Landroid/graphics/PorterDuff$Mode;]
+  + NameAndType [a ()Ljava/lang/String;]
+  + NameAndType [a Landroid/util/DisplayMetrics;]
+  + NameAndType [addFlags (I)Landroid/content/Intent;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [b ()Ljava/lang/String;]
+  + NameAndType [c ()I]
+  + NameAndType [close ()V]
+  + NameAndType [createBitmap (IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;]
+  + NameAndType [createScaledBitmap (Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;]
+  + NameAndType [densityDpi I]
+  + NameAndType [drawARGB (IIII)V]
+  + NameAndType [drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+  + NameAndType [drawRoundRect (Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V]
+  + NameAndType [getDefaultDisplay ()Landroid/view/Display;]
+  + NameAndType [getHeight ()I]
+  + NameAndType [getLastPathSegment ()Ljava/lang/String;]
+  + NameAndType [getMetrics (Landroid/util/DisplayMetrics;)V]
+  + NameAndType [getString (I)Ljava/lang/String;]
+  + NameAndType [getWidth ()I]
+  + NameAndType [getWindowManager ()Landroid/view/WindowManager;]
+  + NameAndType [isAfterLast ()Z]
+  + NameAndType [lastIndexOf (I)I]
+  + NameAndType [managedQuery (Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;]
+  + NameAndType [moveToFirst ()Z]
+  + NameAndType [parse (Ljava/lang/String;)Landroid/net/Uri;]
+  + NameAndType [selectAll ()V]
+  + NameAndType [setAntiAlias (Z)V]
+  + NameAndType [setColor (I)V]
+  + NameAndType [setGravity (I)V]
+  + NameAndType [setInputType (I)V]
+  + NameAndType [setText (Ljava/lang/CharSequence;)V]
+  + NameAndType [setXfermode (Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;]
+  + NameAndType [substring (II)Ljava/lang/String;]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [valueOf (Ljava/lang/Object;)Ljava/lang/String;]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/view/Display;]
+  + Utf8 [()Landroid/view/WindowManager;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(I)I]
+  + Utf8 [(I)Landroid/content/Intent;]
+  + Utf8 [(I)Ljava/lang/String;]
+  + Utf8 [(I)V]
+  + Utf8 [(II)Ljava/lang/String;]
+  + Utf8 [(IIII)V]
+  + Utf8 [(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/content/Context;)V]
+  + Utf8 [(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/graphics/Bitmap;)V]
+  + Utf8 [(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+  + Utf8 [(Landroid/graphics/PorterDuff$Mode;)V]
+  + Utf8 [(Landroid/graphics/Rect;)V]
+  + Utf8 [(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V]
+  + Utf8 [(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;]
+  + Utf8 [(Landroid/net/Uri;)Landroid/content/Intent;]
+  + Utf8 [(Landroid/net/Uri;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/net/Uri;)Ljava/lang/String;]
+  + Utf8 [(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;]
+  + Utf8 [(Landroid/util/DisplayMetrics;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)V]
+  + Utf8 [(Ljava/lang/Object;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;)Landroid/net/Uri;]
+  + Utf8 [(Ljava/lang/String;)Landroid/widget/EditText;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;Landroid/net/Uri;)V]
+  + Utf8 [(Z)V]
+  + Utf8 [<init>]
+  + Utf8 [=?]
+  + Utf8 [ARGB_8888]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [Landroid/graphics/Bitmap$Config;]
+  + Utf8 [Landroid/graphics/PorterDuff$Mode;]
+  + Utf8 [Landroid/util/DisplayMetrics;]
+  + Utf8 [SRC_IN]
+  + Utf8 [a]
+  + Utf8 [addFlags]
+  + Utf8 [android.intent.action.VIEW]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/database/Cursor]
+  + Utf8 [android/graphics/Bitmap]
+  + Utf8 [android/graphics/Bitmap$Config]
+  + Utf8 [android/graphics/Canvas]
+  + Utf8 [android/graphics/Paint]
+  + Utf8 [android/graphics/PorterDuff$Mode]
+  + Utf8 [android/graphics/PorterDuffXfermode]
+  + Utf8 [android/graphics/Rect]
+  + Utf8 [android/graphics/RectF]
+  + Utf8 [android/net/Uri]
+  + Utf8 [android/util/DisplayMetrics]
+  + Utf8 [android/view/Display]
+  + Utf8 [android/view/WindowManager]
+  + Utf8 [android/widget/EditText]
+  + Utf8 [append]
+  + Utf8 [arnodenhond/mediashortcut/MediaShortcut]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [close]
+  + Utf8 [createBitmap]
+  + Utf8 [createScaledBitmap]
+  + Utf8 [densityDpi]
+  + Utf8 [drawARGB]
+  + Utf8 [drawBitmap]
+  + Utf8 [drawRoundRect]
+  + Utf8 [getDefaultDisplay]
+  + Utf8 [getHeight]
+  + Utf8 [getLastPathSegment]
+  + Utf8 [getMetrics]
+  + Utf8 [getString]
+  + Utf8 [getWidth]
+  + Utf8 [getWindowManager]
+  + Utf8 [isAfterLast]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [java/lang/Throwable]
+  + Utf8 [lastIndexOf]
+  + Utf8 [managedQuery]
+  + Utf8 [moveToFirst]
+  + Utf8 [parse]
+  + Utf8 [selectAll]
+  + Utf8 [setAntiAlias]
+  + Utf8 [setColor]
+  + Utf8 [setGravity]
+  + Utf8 [setInputType]
+  + Utf8 [setText]
+  + Utf8 [setXfermode]
+  + Utf8 [substring]
+  + Utf8 [toString]
+  + Utf8 [valueOf]
+
+Fields (count = 1):
+  + Field:        a Landroid/util/DisplayMetrics;
+    Access flags: 0x2
+      = private android.util.DisplayMetrics a
+
+Methods (count = 9):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public MediaShortcut()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #31
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()Ljava/lang/String;
+    Access flags: 0x401
+      = public abstract java.lang.String a()
+  + Method:       b()Ljava/lang/String;
+    Access flags: 0x401
+      = public abstract java.lang.String b()
+  + Method:       a(Landroid/net/Uri;)Landroid/graphics/Bitmap;
+    Access flags: 0x401
+      = public abstract android.graphics.Bitmap a(android.net.Uri)
+  + Method:       a(Ljava/lang/String;)Landroid/widget/EditText;
+    Access flags: 0x11
+      = public final android.widget.EditText a(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 33, locals = 3, stack = 3):
+      [0] new #22
+        + Class [android/widget/EditText]
+      [3] dup
+      [4] aload_0 v0
+      [5] invokespecial #54
+        + Methodref [android/widget/EditText.<init> (Landroid/content/Context;)V]
+      [8] dup
+      [9] astore_2 v2
+      [10] aload_1 v1
+      [11] invokevirtual #58
+        + Methodref [android/widget/EditText.setText (Ljava/lang/CharSequence;)V]
+      [14] aload_2 v2
+      [15] sipush 8192
+      [18] invokevirtual #57
+        + Methodref [android/widget/EditText.setInputType (I)V]
+      [21] aload_2 v2
+      [22] invokevirtual #55
+        + Methodref [android/widget/EditText.selectAll ()V]
+      [25] aload_2 v2
+      [26] bipush 17
+      [28] invokevirtual #56
+        + Methodref [android/widget/EditText.setGravity (I)V]
+      [31] aload_2 v2
+      [32] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b(Landroid/net/Uri;)Landroid/content/Intent;
+    Access flags: 0x9
+      = public static android.content.Intent b(android.net.Uri)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 27, locals = 1, stack = 4):
+      [0] new #8
+        + Class [android/content/Intent]
+      [3] dup
+      [4] ldc #6
+        + String [android.intent.action.VIEW]
+      [6] aload_0 v0
+      [7] invokespecial #32
+        + Methodref [android/content/Intent.<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+      [10] dup
+      [11] astore_0 v0
+      [12] ldc #3
+        + Integer [268435456]
+      [14] invokevirtual #33
+        + Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
+      [17] pop
+      [18] aload_0 v0
+      [19] ldc #2
+        + Integer [67108864]
+      [21] invokevirtual #33
+        + Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
+      [24] pop
+      [25] aload_0 v0
+      [26] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       c(Landroid/net/Uri;)Ljava/lang/String;
+    Access flags: 0x11
+      = public final java.lang.String c(android.net.Uri)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 124, locals = 4, stack = 8):
+      [0] aload_1 v1
+      [1] invokevirtual #51
+        + Methodref [android/net/Uri.toString ()Ljava/lang/String;]
+      [4] iconst_0
+      [5] aload_1 v1
+      [6] invokevirtual #51
+        + Methodref [android/net/Uri.toString ()Ljava/lang/String;]
+      [9] bipush 47
+      [11] invokevirtual #65
+        + Methodref [java/lang/String.lastIndexOf (I)I]
+      [14] invokevirtual #66
+        + Methodref [java/lang/String.substring (II)Ljava/lang/String;]
+      [17] invokestatic #50
+        + Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
+      [20] astore_2 v2
+      [21] aload_0 v0
+      [22] aload_2 v2
+      [23] iconst_2
+      [24] anewarray #24
+        + Class [java/lang/String]
+      [27] dup
+      [28] iconst_0
+      [29] aload_0 v0
+      [30] invokevirtual #59
+        + Methodref [arnodenhond/mediashortcut/MediaShortcut.a ()Ljava/lang/String;]
+      [33] aastore
+      [34] dup
+      [35] iconst_1
+      [36] aload_0 v0
+      [37] invokevirtual #60
+        + Methodref [arnodenhond/mediashortcut/MediaShortcut.b ()Ljava/lang/String;]
+      [40] aastore
+      [41] new #25
+        + Class [java/lang/StringBuilder]
+      [44] dup
+      [45] aload_0 v0
+      [46] invokevirtual #59
+        + Methodref [arnodenhond/mediashortcut/MediaShortcut.a ()Ljava/lang/String;]
+      [49] invokestatic #67
+        + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
+      [52] invokespecial #68
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [55] ldc #5
+        + String [=?]
+      [57] invokevirtual #69
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [60] invokevirtual #70
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [63] iconst_1
+      [64] anewarray #24
+        + Class [java/lang/String]
+      [67] dup
+      [68] iconst_0
+      [69] aload_1 v1
+      [70] invokevirtual #49
+        + Methodref [android/net/Uri.getLastPathSegment ()Ljava/lang/String;]
+      [73] aastore
+      [74] aconst_null
+      [75] invokevirtual #64
+        + Methodref [arnodenhond/mediashortcut/MediaShortcut.managedQuery (Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;]
+      [78] dup
+      [79] astore_2 v2
+      [80] invokeinterface #73
+        + InterfaceMethodref [android/database/Cursor.isAfterLast ()Z]
+      [85] ifeq +10 (target=95)
+      [88] aload_0 v0
+      [89] ldc #4
+        + Integer [2131034121]
+      [91] invokevirtual #62
+        + Methodref [arnodenhond/mediashortcut/MediaShortcut.getString (I)Ljava/lang/String;]
+      [94] areturn
+      [95] aload_2 v2
+      [96] invokeinterface #74
+        + InterfaceMethodref [android/database/Cursor.moveToFirst ()Z]
+      [101] pop
+      [102] aload_2 v2
+      [103] iconst_1
+      [104] invokeinterface #72
+        + InterfaceMethodref [android/database/Cursor.getString (I)Ljava/lang/String;]
+      [109] astore_3 v3
+      [110] aload_2 v2
+      [111] invokeinterface #71
+        + InterfaceMethodref [android/database/Cursor.close ()V]
+      [116] aload_3 v3
+      [117] areturn
+      [118] pop
+      [119] aload_1 v1
+      [120] invokevirtual #51
+        + Methodref [android/net/Uri.toString ()Ljava/lang/String;]
+      [123] areturn
+      Code attribute exceptions (count = 2):
+      - ExceptionInfo (0 -> 94: 118):
+      + Class [java/lang/Throwable]
+      - ExceptionInfo (95 -> 117: 118):
+      + Class [java/lang/Throwable]
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
+    Access flags: 0x11
+      = public final android.graphics.Bitmap a(android.graphics.Bitmap)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 154, locals = 8, stack = 6):
+      [0] aload_1 v1
+      [1] ifnonnull +5 (target=6)
+      [4] aload_1 v1
+      [5] areturn
+      [6] aload_1 v1
+      [7] aload_0 v0
+      [8] invokespecial #61
+        + Methodref [arnodenhond/mediashortcut/MediaShortcut.c ()I]
+      [11] aload_0 v0
+      [12] invokespecial #61
+        + Methodref [arnodenhond/mediashortcut/MediaShortcut.c ()I]
+      [15] iconst_1
+      [16] invokestatic #35
+        + Methodref [android/graphics/Bitmap.createScaledBitmap (Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;]
+      [19] dup
+      [20] astore_1 v1
+      [21] invokevirtual #37
+        + Methodref [android/graphics/Bitmap.getWidth ()I]
+      [24] aload_1 v1
+      [25] invokevirtual #36
+        + Methodref [android/graphics/Bitmap.getHeight ()I]
+      [28] getstatic #27
+        + Fieldref [android/graphics/Bitmap$Config.ARGB_8888 Landroid/graphics/Bitmap$Config;]
+      [31] invokestatic #34
+        + Methodref [android/graphics/Bitmap.createBitmap (IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;]
+      [34] astore_2 v2
+      [35] new #12
+        + Class [android/graphics/Canvas]
+      [38] dup
+      [39] aload_2 v2
+      [40] invokespecial #38
+        + Methodref [android/graphics/Canvas.<init> (Landroid/graphics/Bitmap;)V]
+      [43] astore_3 v3
+      [44] new #13
+        + Class [android/graphics/Paint]
+      [47] dup
+      [48] invokespecial #42
+        + Methodref [android/graphics/Paint.<init> ()V]
+      [51] astore v4
+      [53] new #16
+        + Class [android/graphics/Rect]
+      [56] dup
+      [57] iconst_0
+      [58] iconst_0
+      [59] aload_1 v1
+      [60] invokevirtual #37
+        + Methodref [android/graphics/Bitmap.getWidth ()I]
+      [63] aload_1 v1
+      [64] invokevirtual #36
+        + Methodref [android/graphics/Bitmap.getHeight ()I]
+      [67] invokespecial #47
+        + Methodref [android/graphics/Rect.<init> (IIII)V]
+      [70] astore v5
+      [72] new #17
+        + Class [android/graphics/RectF]
+      [75] dup
+      [76] aload v5
+      [78] invokespecial #48
+        + Methodref [android/graphics/RectF.<init> (Landroid/graphics/Rect;)V]
+      [81] astore v6
+      [83] aload_0 v0
+      [84] invokespecial #61
+        + Methodref [arnodenhond/mediashortcut/MediaShortcut.c ()I]
+      [87] iconst_5
+      [88] idiv
+      [89] i2f
+      [90] fstore v7
+      [92] aload v4
+      [94] iconst_1
+      [95] invokevirtual #43
+        + Methodref [android/graphics/Paint.setAntiAlias (Z)V]
+      [98] aload_3 v3
+      [99] iconst_0
+      [100] iconst_0
+      [101] iconst_0
+      [102] iconst_0
+      [103] invokevirtual #39
+        + Methodref [android/graphics/Canvas.drawARGB (IIII)V]
+      [106] aload v4
+      [108] ldc #1
+        + Integer [-12434878]
+      [110] invokevirtual #44
+        + Methodref [android/graphics/Paint.setColor (I)V]
+      [113] aload_3 v3
+      [114] aload v6
+      [116] fload v7
+      [118] fload v7
+      [120] aload v4
+      [122] invokevirtual #41
+        + Methodref [android/graphics/Canvas.drawRoundRect (Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V]
+      [125] aload v4
+      [127] new #15
+        + Class [android/graphics/PorterDuffXfermode]
+      [130] dup
+      [131] getstatic #28
+        + Fieldref [android/graphics/PorterDuff$Mode.SRC_IN Landroid/graphics/PorterDuff$Mode;]
+      [134] invokespecial #46
+        + Methodref [android/graphics/PorterDuffXfermode.<init> (Landroid/graphics/PorterDuff$Mode;)V]
+      [137] invokevirtual #45
+        + Methodref [android/graphics/Paint.setXfermode (Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;]
+      [140] pop
+      [141] aload_3 v3
+      [142] aload_1 v1
+      [143] aload v5
+      [145] aload v5
+      [147] aload v4
+      [149] invokevirtual #40
+        + Methodref [android/graphics/Canvas.drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+      [152] aload_2 v2
+      [153] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       c()I
+    Access flags: 0x2
+      = private int c()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 99, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] getfield #30
+        + Fieldref [arnodenhond/mediashortcut/MediaShortcut.a Landroid/util/DisplayMetrics;]
+      [4] ifnonnull +30 (target=34)
+      [7] aload_0 v0
+      [8] new #19
+        + Class [android/util/DisplayMetrics]
+      [11] dup
+      [12] invokespecial #52
+        + Methodref [android/util/DisplayMetrics.<init> ()V]
+      [15] putfield #30
+        + Fieldref [arnodenhond/mediashortcut/MediaShortcut.a Landroid/util/DisplayMetrics;]
+      [18] aload_0 v0
+      [19] invokevirtual #63
+        + Methodref [arnodenhond/mediashortcut/MediaShortcut.getWindowManager ()Landroid/view/WindowManager;]
+      [22] invokeinterface #75
+        + InterfaceMethodref [android/view/WindowManager.getDefaultDisplay ()Landroid/view/Display;]
+      [27] aload_0 v0
+      [28] getfield #30
+        + Fieldref [arnodenhond/mediashortcut/MediaShortcut.a Landroid/util/DisplayMetrics;]
+      [31] invokevirtual #53
+        + Methodref [android/view/Display.getMetrics (Landroid/util/DisplayMetrics;)V]
+      [34] aload_0 v0
+      [35] getfield #30
+        + Fieldref [arnodenhond/mediashortcut/MediaShortcut.a Landroid/util/DisplayMetrics;]
+      [38] getfield #29
+        + Fieldref [android/util/DisplayMetrics.densityDpi I]
+      [41] lookupswitch (4 offsets, default=55) (target=96)
+        120: offset = 43, target = 84
+        160: offset = 46, target = 87
+        240: offset = 49, target = 90
+        320: offset = 52, target = 93
+        default: offset = 55, target = 96
+      [84] bipush 36
+      [86] ireturn
+      [87] bipush 48
+      [89] ireturn
+      [90] bipush 72
+      [92] ireturn
+      [93] bipush 96
+      [95] ireturn
+      [96] bipush 100
+      [98] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: arnodenhond/mediashortcut/addshortcut/AddImage
+  Superclass:    arnodenhond/mediashortcut/addshortcut/AddShortcut
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class arnodenhond.mediashortcut.addshortcut.AddImage extends arnodenhond.mediashortcut.addshortcut.AddShortcut
+
+Interfaces (count = 0):
+
+Constant Pool (count = 47):
+  + String [_display_name]
+  + String [_id]
+  + String [image/*]
+  + Class [android/net/Uri]
+  + Class [android/provider/MediaStore$Images$Thumbnails]
+  + Class [arnodenhond/mediashortcut/addshortcut/AddImage]
+  + Class [arnodenhond/mediashortcut/addshortcut/AddShortcut]
+  + Class [java/lang/Integer]
+  + Class [java/lang/Throwable]
+  + Methodref [android/net/Uri.getLastPathSegment ()Ljava/lang/String;]
+  + Methodref [android/provider/MediaStore$Images$Thumbnails.getThumbnail (Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddImage.a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddImage.getContentResolver ()Landroid/content/ContentResolver;]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.<init> ()V]
+  + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + NameAndType [getContentResolver ()Landroid/content/ContentResolver;]
+  + NameAndType [getLastPathSegment ()Ljava/lang/String;]
+  + NameAndType [getThumbnail (Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+  + NameAndType [parseInt (Ljava/lang/String;)I]
+  + Utf8 [()Landroid/content/ContentResolver;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/net/Uri;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Ljava/lang/String;)I]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [_display_name]
+  + Utf8 [_id]
+  + Utf8 [a]
+  + Utf8 [android/net/Uri]
+  + Utf8 [android/provider/MediaStore$Images$Thumbnails]
+  + Utf8 [arnodenhond/mediashortcut/addshortcut/AddImage]
+  + Utf8 [arnodenhond/mediashortcut/addshortcut/AddShortcut]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [getContentResolver]
+  + Utf8 [getLastPathSegment]
+  + Utf8 [getThumbnail]
+  + Utf8 [image/*]
+  + Utf8 [java/lang/Integer]
+  + Utf8 [java/lang/Throwable]
+  + Utf8 [parseInt]
+
+Fields (count = 0):
+
+Methods (count = 5):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public AddImage()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #14
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Landroid/net/Uri;)Landroid/graphics/Bitmap;
+    Access flags: 0x11
+      = public final android.graphics.Bitmap a(android.net.Uri)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 25, locals = 2, stack = 6):
+      [0] aload_0 v0
+      [1] aload_0 v0
+      [2] invokevirtual #13
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddImage.getContentResolver ()Landroid/content/ContentResolver;]
+      [5] aload_1 v1
+      [6] invokevirtual #10
+        + Methodref [android/net/Uri.getLastPathSegment ()Ljava/lang/String;]
+      [9] invokestatic #15
+        + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+      [12] i2l
+      [13] iconst_3
+      [14] aconst_null
+      [15] invokestatic #11
+        + Methodref [android/provider/MediaStore$Images$Thumbnails.getThumbnail (Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+      [18] invokevirtual #12
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddImage.a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+      [21] areturn
+      [22] pop
+      [23] aconst_null
+      [24] areturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (0 -> 21: 22):
+      + Class [java/lang/Throwable]
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()Ljava/lang/String;
+    Access flags: 0x11
+      = public final java.lang.String a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 3, locals = 1, stack = 1):
+      [0] ldc #2
+        + String [_id]
+      [2] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b()Ljava/lang/String;
+    Access flags: 0x11
+      = public final java.lang.String b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 3, locals = 1, stack = 1):
+      [0] ldc #1
+        + String [_display_name]
+      [2] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       c()Ljava/lang/String;
+    Access flags: 0x10
+      = final java.lang.String c()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 3, locals = 1, stack = 1):
+      [0] ldc #3
+        + String [image/*]
+      [2] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: arnodenhond/mediashortcut/addshortcut/AddShortcut
+  Superclass:    arnodenhond/mediashortcut/MediaShortcut
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x421
+    = public abstract class arnodenhond.mediashortcut.addshortcut.AddShortcut extends arnodenhond.mediashortcut.MediaShortcut
+
+Interfaces (count = 0):
+
+Constant Pool (count = 180):
+  + Integer [2131034115]
+  + Integer [2131034116]
+  + Integer [2131034118]
+  + Integer [2131034119]
+  + Integer [2131034120]
+  + Integer [2131034121]
+  + Integer [2131034122]
+  + String [android.intent.action.GET_CONTENT]
+  + String [aspectX]
+  + String [aspectY]
+  + String [com.android.camera.action.CROP]
+  + String [crop]
+  + String [data]
+  + String [outputX]
+  + String [outputY]
+  + String [return-data]
+  + String [scale]
+  + String [true]
+  + Class [android/app/AlertDialog$Builder]
+  + Class [android/content/Intent]
+  + Class [android/content/pm/PackageManager]
+  + Class [android/graphics/Bitmap]
+  + Class [android/graphics/drawable/BitmapDrawable]
+  + Class [android/widget/Toast]
+  + Class [arnodenhond/mediashortcut/MediaShortcut]
+  + Class [arnodenhond/mediashortcut/addshortcut/AddShortcut]
+  + Class [arnodenhond/mediashortcut/addshortcut/a]
+  + Class [arnodenhond/mediashortcut/addshortcut/b]
+  + Class [java/util/List]
+  + Fieldref [arnodenhond/mediashortcut/addshortcut/AddShortcut.a Landroid/net/Uri;]
+  + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+  + Methodref [android/app/AlertDialog$Builder.setIcon (Landroid/graphics/drawable/Drawable;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setNeutralButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setOnCancelListener (Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setTitle (I)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setView (Landroid/view/View;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
+  + Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
+  + Methodref [android/content/Intent.getData ()Landroid/net/Uri;]
+  + Methodref [android/content/Intent.getParcelableExtra (Ljava/lang/String;)Landroid/os/Parcelable;]
+  + Methodref [android/content/Intent.putExtra (Ljava/lang/String;I)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Z)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.setData (Landroid/net/Uri;)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.setType (Ljava/lang/String;)Landroid/content/Intent;]
+  + Methodref [android/content/pm/PackageManager.queryIntentActivities (Landroid/content/Intent;I)Ljava/util/List;]
+  + Methodref [android/graphics/drawable/BitmapDrawable.<init> (Landroid/graphics/Bitmap;)V]
+  + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+  + Methodref [android/widget/Toast.show ()V]
+  + Methodref [arnodenhond/mediashortcut/MediaShortcut.<init> ()V]
+  + Methodref [arnodenhond/mediashortcut/MediaShortcut.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.a (Landroid/net/Uri;)Landroid/graphics/Bitmap;]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.a (Ljava/lang/String;)Landroid/widget/EditText;]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.b (Landroid/net/Uri;)Landroid/content/Intent;]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.c ()Ljava/lang/String;]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.c (Landroid/net/Uri;)Ljava/lang/String;]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.finish ()V]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.getPackageManager ()Landroid/content/pm/PackageManager;]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.setResult (I)V]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.startActivityForResult (Landroid/content/Intent;I)V]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/a.<init> (Larnodenhond/mediashortcut/addshortcut/AddShortcut;Landroid/content/Intent;Landroid/graphics/Bitmap;Landroid/widget/EditText;)V]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/b.<init> (Larnodenhond/mediashortcut/addshortcut/AddShortcut;)V]
+  + InterfaceMethodref [java/util/List.isEmpty ()Z]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;)V]
+  + NameAndType [<init> (Landroid/graphics/Bitmap;)V]
+  + NameAndType [<init> (Larnodenhond/mediashortcut/addshortcut/AddShortcut;)V]
+  + NameAndType [<init> (Larnodenhond/mediashortcut/addshortcut/AddShortcut;Landroid/content/Intent;Landroid/graphics/Bitmap;Landroid/widget/EditText;)V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + NameAndType [a (Landroid/net/Uri;)Landroid/graphics/Bitmap;]
+  + NameAndType [a (Ljava/lang/String;)Landroid/widget/EditText;]
+  + NameAndType [a Landroid/net/Uri;]
+  + NameAndType [b (Landroid/net/Uri;)Landroid/content/Intent;]
+  + NameAndType [c ()Ljava/lang/String;]
+  + NameAndType [c (Landroid/net/Uri;)Ljava/lang/String;]
+  + NameAndType [finish ()V]
+  + NameAndType [getData ()Landroid/net/Uri;]
+  + NameAndType [getPackageManager ()Landroid/content/pm/PackageManager;]
+  + NameAndType [getParcelableExtra (Ljava/lang/String;)Landroid/os/Parcelable;]
+  + NameAndType [isEmpty ()Z]
+  + NameAndType [makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [putExtra (Ljava/lang/String;I)Landroid/content/Intent;]
+  + NameAndType [putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [putExtra (Ljava/lang/String;Z)Landroid/content/Intent;]
+  + NameAndType [queryIntentActivities (Landroid/content/Intent;I)Ljava/util/List;]
+  + NameAndType [setData (Landroid/net/Uri;)Landroid/content/Intent;]
+  + NameAndType [setIcon (Landroid/graphics/drawable/Drawable;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setNeutralButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setOnCancelListener (Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setResult (I)V]
+  + NameAndType [setTitle (I)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setType (Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [setView (Landroid/view/View;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [show ()Landroid/app/AlertDialog;]
+  + NameAndType [show ()V]
+  + NameAndType [startActivityForResult (Landroid/content/Intent;I)V]
+  + Utf8 [()Landroid/app/AlertDialog;]
+  + Utf8 [()Landroid/content/pm/PackageManager;]
+  + Utf8 [()Landroid/net/Uri;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(I)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(I)V]
+  + Utf8 [(IILandroid/content/Intent;)V]
+  + Utf8 [(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Landroid/content/Context;)V]
+  + Utf8 [(Landroid/content/Context;II)Landroid/widget/Toast;]
+  + Utf8 [(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Landroid/content/Intent;I)Ljava/util/List;]
+  + Utf8 [(Landroid/content/Intent;I)V]
+  + Utf8 [(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/graphics/Bitmap;)V]
+  + Utf8 [(Landroid/graphics/drawable/Drawable;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Landroid/net/Uri;)Landroid/content/Intent;]
+  + Utf8 [(Landroid/net/Uri;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/net/Uri;)Ljava/lang/String;]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/View;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Larnodenhond/mediashortcut/addshortcut/AddShortcut;)V]
+  + Utf8 [(Larnodenhond/mediashortcut/addshortcut/AddShortcut;Landroid/content/Intent;Landroid/graphics/Bitmap;Landroid/widget/EditText;)V]
+  + Utf8 [(Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [(Ljava/lang/String;)Landroid/os/Parcelable;]
+  + Utf8 [(Ljava/lang/String;)Landroid/widget/EditText;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;I)Landroid/content/Intent;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [(Ljava/lang/String;Z)Landroid/content/Intent;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/net/Uri;]
+  + Utf8 [a]
+  + Utf8 [android.intent.action.GET_CONTENT]
+  + Utf8 [android/app/AlertDialog$Builder]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/content/pm/PackageManager]
+  + Utf8 [android/graphics/Bitmap]
+  + Utf8 [android/graphics/drawable/BitmapDrawable]
+  + Utf8 [android/widget/Toast]
+  + Utf8 [arnodenhond/mediashortcut/MediaShortcut]
+  + Utf8 [arnodenhond/mediashortcut/addshortcut/AddShortcut]
+  + Utf8 [arnodenhond/mediashortcut/addshortcut/a]
+  + Utf8 [arnodenhond/mediashortcut/addshortcut/b]
+  + Utf8 [aspectX]
+  + Utf8 [aspectY]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com.android.camera.action.CROP]
+  + Utf8 [crop]
+  + Utf8 [data]
+  + Utf8 [finish]
+  + Utf8 [getData]
+  + Utf8 [getPackageManager]
+  + Utf8 [getParcelableExtra]
+  + Utf8 [isEmpty]
+  + Utf8 [java/util/List]
+  + Utf8 [makeText]
+  + Utf8 [onActivityResult]
+  + Utf8 [onCreate]
+  + Utf8 [outputX]
+  + Utf8 [outputY]
+  + Utf8 [putExtra]
+  + Utf8 [queryIntentActivities]
+  + Utf8 [return-data]
+  + Utf8 [scale]
+  + Utf8 [setData]
+  + Utf8 [setIcon]
+  + Utf8 [setNeutralButton]
+  + Utf8 [setOnCancelListener]
+  + Utf8 [setResult]
+  + Utf8 [setTitle]
+  + Utf8 [setType]
+  + Utf8 [setView]
+  + Utf8 [show]
+  + Utf8 [startActivityForResult]
+  + Utf8 [true]
+
+Fields (count = 1):
+  + Field:        a Landroid/net/Uri;
+    Access flags: 0x2
+      = private android.net.Uri a
+
+Methods (count = 4):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public AddShortcut()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #50
+        + Methodref [arnodenhond/mediashortcut/MediaShortcut.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       c()Ljava/lang/String;
+    Access flags: 0x400
+      = abstract java.lang.String c()
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 78, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #51
+        + Methodref [arnodenhond/mediashortcut/MediaShortcut.onCreate (Landroid/os/Bundle;)V]
+      [5] new #20
+        + Class [android/content/Intent]
+      [8] dup
+      [9] ldc #8
+        + String [android.intent.action.GET_CONTENT]
+      [11] invokespecial #38
+        + Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
+      [14] dup
+      [15] astore_1 v1
+      [16] aload_0 v0
+      [17] invokevirtual #56
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.c ()Ljava/lang/String;]
+      [20] invokevirtual #45
+        + Methodref [android/content/Intent.setType (Ljava/lang/String;)Landroid/content/Intent;]
+      [23] pop
+      [24] aload_0 v0
+      [25] invokevirtual #59
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.getPackageManager ()Landroid/content/pm/PackageManager;]
+      [28] aload_1 v1
+      [29] iconst_0
+      [30] invokevirtual #46
+        + Methodref [android/content/pm/PackageManager.queryIntentActivities (Landroid/content/Intent;I)Ljava/util/List;]
+      [33] invokeinterface #64
+        + InterfaceMethodref [java/util/List.isEmpty ()Z]
+      [38] ifne +20 (target=58)
+      [41] aload_0 v0
+      [42] aload_1 v1
+      [43] iconst_1
+      [44] invokevirtual #61
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.startActivityForResult (Landroid/content/Intent;I)V]
+      [47] aload_0 v0
+      [48] ldc #2
+        + Integer [2131034116]
+      [50] iconst_0
+      [51] invokestatic #48
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+      [54] invokevirtual #49
+        + Methodref [android/widget/Toast.show ()V]
+      [57] return
+      [58] aload_0 v0
+      [59] iconst_0
+      [60] invokevirtual #60
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.setResult (I)V]
+      [63] aload_0 v0
+      [64] ldc #1
+        + Integer [2131034115]
+      [66] iconst_0
+      [67] invokestatic #48
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+      [70] invokevirtual #49
+        + Methodref [android/widget/Toast.show ()V]
+      [73] aload_0 v0
+      [74] invokevirtual #58
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.finish ()V]
+      [77] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onActivityResult(IILandroid/content/Intent;)V
+    Access flags: 0x1
+      = public void onActivityResult(int,int,android.content.Intent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 306, locals = 5, stack = 8):
+      [0] iload_2 v2
+      [1] iconst_m1
+      [2] ificmpeq +23 (target=25)
+      [5] aload_0 v0
+      [6] iconst_0
+      [7] invokevirtual #60
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.setResult (I)V]
+      [10] aload_0 v0
+      [11] ldc #3
+        + Integer [2131034118]
+      [13] iconst_0
+      [14] invokestatic #48
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+      [17] invokevirtual #49
+        + Methodref [android/widget/Toast.show ()V]
+      [20] aload_0 v0
+      [21] invokevirtual #58
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.finish ()V]
+      [24] return
+      [25] iload_1 v1
+      [26] iconst_1
+      [27] ificmpne +123 (target=150)
+      [30] aload_0 v0
+      [31] aload_3 v3
+      [32] invokevirtual #39
+        + Methodref [android/content/Intent.getData ()Landroid/net/Uri;]
+      [35] putfield #30
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/AddShortcut.a Landroid/net/Uri;]
+      [38] new #20
+        + Class [android/content/Intent]
+      [41] dup
+      [42] ldc #11
+        + String [com.android.camera.action.CROP]
+      [44] invokespecial #38
+        + Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
+      [47] dup
+      [48] astore_2 v2
+      [49] aload_0 v0
+      [50] getfield #30
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/AddShortcut.a Landroid/net/Uri;]
+      [53] invokevirtual #44
+        + Methodref [android/content/Intent.setData (Landroid/net/Uri;)Landroid/content/Intent;]
+      [56] pop
+      [57] aload_2 v2
+      [58] ldc #12
+        + String [crop]
+      [60] ldc #18
+        + String [true]
+      [62] invokevirtual #42
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+      [65] pop
+      [66] aload_2 v2
+      [67] ldc #14
+        + String [outputX]
+      [69] bipush 100
+      [71] invokevirtual #41
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;I)Landroid/content/Intent;]
+      [74] pop
+      [75] aload_2 v2
+      [76] ldc #15
+        + String [outputY]
+      [78] bipush 100
+      [80] invokevirtual #41
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;I)Landroid/content/Intent;]
+      [83] pop
+      [84] aload_2 v2
+      [85] ldc #9
+        + String [aspectX]
+      [87] iconst_1
+      [88] invokevirtual #41
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;I)Landroid/content/Intent;]
+      [91] pop
+      [92] aload_2 v2
+      [93] ldc #10
+        + String [aspectY]
+      [95] iconst_1
+      [96] invokevirtual #41
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;I)Landroid/content/Intent;]
+      [99] pop
+      [100] aload_2 v2
+      [101] ldc #17
+        + String [scale]
+      [103] iconst_1
+      [104] invokevirtual #43
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Z)Landroid/content/Intent;]
+      [107] pop
+      [108] aload_2 v2
+      [109] ldc #16
+        + String [return-data]
+      [111] iconst_1
+      [112] invokevirtual #43
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Z)Landroid/content/Intent;]
+      [115] pop
+      [116] aload_0 v0
+      [117] invokevirtual #59
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.getPackageManager ()Landroid/content/pm/PackageManager;]
+      [120] aload_2 v2
+      [121] iconst_0
+      [122] invokevirtual #46
+        + Methodref [android/content/pm/PackageManager.queryIntentActivities (Landroid/content/Intent;I)Ljava/util/List;]
+      [125] invokeinterface #64
+        + InterfaceMethodref [java/util/List.isEmpty ()Z]
+      [130] ifne +10 (target=140)
+      [133] aload_0 v0
+      [134] aload_2 v2
+      [135] iconst_2
+      [136] invokevirtual #61
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.startActivityForResult (Landroid/content/Intent;I)V]
+      [139] return
+      [140] aload_0 v0
+      [141] ldc #5
+        + Integer [2131034120]
+      [143] iconst_0
+      [144] invokestatic #48
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+      [147] invokevirtual #49
+        + Methodref [android/widget/Toast.show ()V]
+      [150] aload_0 v0
+      [151] aload_0 v0
+      [152] getfield #30
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/AddShortcut.a Landroid/net/Uri;]
+      [155] invokevirtual #57
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.c (Landroid/net/Uri;)Ljava/lang/String;]
+      [158] astore_2 v2
+      [159] iload_1 v1
+      [160] iconst_2
+      [161] ificmpne +20 (target=181)
+      [164] aload_0 v0
+      [165] aload_3 v3
+      [166] ldc #13
+        + String [data]
+      [168] invokevirtual #40
+        + Methodref [android/content/Intent.getParcelableExtra (Ljava/lang/String;)Landroid/os/Parcelable;]
+      [171] checkcast #22
+        + Class [android/graphics/Bitmap]
+      [174] invokevirtual #52
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+      [177] astore_1 v1
+      [178] goto +12 (target=190)
+      [181] aload_0 v0
+      [182] aload_0 v0
+      [183] getfield #30
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/AddShortcut.a Landroid/net/Uri;]
+      [186] invokevirtual #53
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.a (Landroid/net/Uri;)Landroid/graphics/Bitmap;]
+      [189] astore_1 v1
+      [190] aload_1 v1
+      [191] ifnonnull +23 (target=214)
+      [194] aload_0 v0
+      [195] iconst_0
+      [196] invokevirtual #60
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.setResult (I)V]
+      [199] aload_0 v0
+      [200] ldc #4
+        + Integer [2131034119]
+      [202] iconst_0
+      [203] invokestatic #48
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+      [206] invokevirtual #49
+        + Methodref [android/widget/Toast.show ()V]
+      [209] aload_0 v0
+      [210] invokevirtual #58
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.finish ()V]
+      [213] return
+      [214] aload_0 v0
+      [215] getfield #30
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/AddShortcut.a Landroid/net/Uri;]
+      [218] invokestatic #55
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.b (Landroid/net/Uri;)Landroid/content/Intent;]
+      [221] astore_3 v3
+      [222] new #19
+        + Class [android/app/AlertDialog$Builder]
+      [225] dup
+      [226] aload_0 v0
+      [227] invokespecial #31
+        + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+      [230] dup
+      [231] astore v4
+      [233] ldc #6
+        + Integer [2131034121]
+      [235] invokevirtual #35
+        + Methodref [android/app/AlertDialog$Builder.setTitle (I)Landroid/app/AlertDialog$Builder;]
+      [238] pop
+      [239] aload_0 v0
+      [240] aload_2 v2
+      [241] invokevirtual #54
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.a (Ljava/lang/String;)Landroid/widget/EditText;]
+      [244] astore_2 v2
+      [245] aload v4
+      [247] aload_2 v2
+      [248] invokevirtual #36
+        + Methodref [android/app/AlertDialog$Builder.setView (Landroid/view/View;)Landroid/app/AlertDialog$Builder;]
+      [251] pop
+      [252] aload v4
+      [254] new #23
+        + Class [android/graphics/drawable/BitmapDrawable]
+      [257] dup
+      [258] aload_1 v1
+      [259] invokespecial #47
+        + Methodref [android/graphics/drawable/BitmapDrawable.<init> (Landroid/graphics/Bitmap;)V]
+      [262] invokevirtual #32
+        + Methodref [android/app/AlertDialog$Builder.setIcon (Landroid/graphics/drawable/Drawable;)Landroid/app/AlertDialog$Builder;]
+      [265] pop
+      [266] aload v4
+      [268] ldc #7
+        + Integer [2131034122]
+      [270] new #27
+        + Class [arnodenhond/mediashortcut/addshortcut/a]
+      [273] dup
+      [274] aload_0 v0
+      [275] aload_3 v3
+      [276] aload_1 v1
+      [277] aload_2 v2
+      [278] invokespecial #62
+        + Methodref [arnodenhond/mediashortcut/addshortcut/a.<init> (Larnodenhond/mediashortcut/addshortcut/AddShortcut;Landroid/content/Intent;Landroid/graphics/Bitmap;Landroid/widget/EditText;)V]
+      [281] invokevirtual #33
+        + Methodref [android/app/AlertDialog$Builder.setNeutralButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [284] pop
+      [285] aload v4
+      [287] new #28
+        + Class [arnodenhond/mediashortcut/addshortcut/b]
+      [290] dup
+      [291] aload_0 v0
+      [292] invokespecial #63
+        + Methodref [arnodenhond/mediashortcut/addshortcut/b.<init> (Larnodenhond/mediashortcut/addshortcut/AddShortcut;)V]
+      [295] invokevirtual #34
+        + Methodref [android/app/AlertDialog$Builder.setOnCancelListener (Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;]
+      [298] pop
+      [299] aload v4
+      [301] invokevirtual #37
+        + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
+      [304] pop
+      [305] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: arnodenhond/mediashortcut/addshortcut/a
+  Superclass:    java/lang/Object
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class arnodenhond.mediashortcut.addshortcut.a extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/content/DialogInterface$OnClickListener]
+
+Constant Pool (count = 78):
+  + Integer [2131034117]
+  + String [android.intent.extra.shortcut.ICON]
+  + String [android.intent.extra.shortcut.INTENT]
+  + String [android.intent.extra.shortcut.NAME]
+  + Class [android/content/DialogInterface$OnClickListener]
+  + Class [android/content/Intent]
+  + Class [android/text/Editable]
+  + Class [android/widget/EditText]
+  + Class [android/widget/Toast]
+  + Class [arnodenhond/mediashortcut/addshortcut/AddShortcut]
+  + Class [arnodenhond/mediashortcut/addshortcut/a]
+  + Class [java/lang/Object]
+  + Fieldref [arnodenhond/mediashortcut/addshortcut/a.a Larnodenhond/mediashortcut/addshortcut/AddShortcut;]
+  + Fieldref [arnodenhond/mediashortcut/addshortcut/a.b Landroid/content/Intent;]
+  + Fieldref [arnodenhond/mediashortcut/addshortcut/a.c Landroid/graphics/Bitmap;]
+  + Fieldref [arnodenhond/mediashortcut/addshortcut/a.d Landroid/widget/EditText;]
+  + Methodref [android/content/Intent.<init> ()V]
+  + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
+  + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+  + Methodref [android/widget/Toast.show ()V]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.finish ()V]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.setResult (ILandroid/content/Intent;)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + InterfaceMethodref [android/text/Editable.toString ()Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Larnodenhond/mediashortcut/addshortcut/AddShortcut;]
+  + NameAndType [b Landroid/content/Intent;]
+  + NameAndType [c Landroid/graphics/Bitmap;]
+  + NameAndType [d Landroid/widget/EditText;]
+  + NameAndType [finish ()V]
+  + NameAndType [getText ()Landroid/text/Editable;]
+  + NameAndType [makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+  + NameAndType [putExtra (Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;]
+  + NameAndType [putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [setResult (ILandroid/content/Intent;)V]
+  + NameAndType [show ()V]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + Utf8 [()Landroid/text/Editable;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(ILandroid/content/Intent;)V]
+  + Utf8 [(Landroid/content/Context;II)Landroid/widget/Toast;]
+  + Utf8 [(Landroid/content/DialogInterface;I)V]
+  + Utf8 [(Larnodenhond/mediashortcut/addshortcut/AddShortcut;Landroid/content/Intent;Landroid/graphics/Bitmap;Landroid/widget/EditText;)V]
+  + Utf8 [(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/content/Intent;]
+  + Utf8 [Landroid/graphics/Bitmap;]
+  + Utf8 [Landroid/widget/EditText;]
+  + Utf8 [Larnodenhond/mediashortcut/addshortcut/AddShortcut;]
+  + Utf8 [a]
+  + Utf8 [android.intent.extra.shortcut.ICON]
+  + Utf8 [android.intent.extra.shortcut.INTENT]
+  + Utf8 [android.intent.extra.shortcut.NAME]
+  + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/text/Editable]
+  + Utf8 [android/widget/EditText]
+  + Utf8 [android/widget/Toast]
+  + Utf8 [arnodenhond/mediashortcut/addshortcut/AddShortcut]
+  + Utf8 [arnodenhond/mediashortcut/addshortcut/a]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [d]
+  + Utf8 [finish]
+  + Utf8 [getText]
+  + Utf8 [java/lang/Object]
+  + Utf8 [makeText]
+  + Utf8 [onClick]
+  + Utf8 [putExtra]
+  + Utf8 [setResult]
+  + Utf8 [show]
+  + Utf8 [toString]
+
+Fields (count = 4):
+  + Field:        a Larnodenhond/mediashortcut/addshortcut/AddShortcut;
+    Access flags: 0x1010
+      = final synthetic arnodenhond.mediashortcut.addshortcut.AddShortcut a
+  + Field:        b Landroid/content/Intent;
+    Access flags: 0x1012
+      = private final synthetic android.content.Intent b
+  + Field:        c Landroid/graphics/Bitmap;
+    Access flags: 0x1012
+      = private final synthetic android.graphics.Bitmap c
+  + Field:        d Landroid/widget/EditText;
+    Access flags: 0x1012
+      = private final synthetic android.widget.EditText d
+
+Methods (count = 2):
+  - Method:       <init>(Larnodenhond/mediashortcut/addshortcut/AddShortcut;Landroid/content/Intent;Landroid/graphics/Bitmap;Landroid/widget/EditText;)V
+    Access flags: 0x0
+      = a(arnodenhond.mediashortcut.addshortcut.AddShortcut,android.content.Intent,android.graphics.Bitmap,android.widget.EditText)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 26, locals = 5, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #13
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/a.a Larnodenhond/mediashortcut/addshortcut/AddShortcut;]
+      [5] aload_0 v0
+      [6] aload_2 v2
+      [7] putfield #14
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/a.b Landroid/content/Intent;]
+      [10] aload_0 v0
+      [11] aload_3 v3
+      [12] putfield #15
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/a.c Landroid/graphics/Bitmap;]
+      [15] aload_0 v0
+      [16] aload v4
+      [18] putfield #16
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/a.d Landroid/widget/EditText;]
+      [21] aload_0 v0
+      [22] invokespecial #25
+        + Methodref [java/lang/Object.<init> ()V]
+      [25] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/content/DialogInterface;I)V
+    Access flags: 0x11
+      = public final void onClick(android.content.DialogInterface,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 89, locals = 5, stack = 5):
+      [0] aload_0 v0
+      [1] getfield #13
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/a.a Larnodenhond/mediashortcut/addshortcut/AddShortcut;]
+      [4] iconst_m1
+      [5] aload_0 v0
+      [6] getfield #14
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/a.b Landroid/content/Intent;]
+      [9] aload_0 v0
+      [10] getfield #15
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/a.c Landroid/graphics/Bitmap;]
+      [13] aload_0 v0
+      [14] getfield #16
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/a.d Landroid/widget/EditText;]
+      [17] invokevirtual #20
+        + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
+      [20] invokeinterface #26
+        + InterfaceMethodref [android/text/Editable.toString ()Ljava/lang/String;]
+      [25] astore_3 v3
+      [26] astore_2 v2
+      [27] astore_1 v1
+      [28] new #6
+        + Class [android/content/Intent]
+      [31] dup
+      [32] invokespecial #17
+        + Methodref [android/content/Intent.<init> ()V]
+      [35] dup
+      [36] astore v4
+      [38] ldc #3
+        + String [android.intent.extra.shortcut.INTENT]
+      [40] aload_1 v1
+      [41] invokevirtual #18
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;]
+      [44] pop
+      [45] aload v4
+      [47] ldc #2
+        + String [android.intent.extra.shortcut.ICON]
+      [49] aload_2 v2
+      [50] invokevirtual #18
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;]
+      [53] pop
+      [54] aload v4
+      [56] ldc #4
+        + String [android.intent.extra.shortcut.NAME]
+      [58] aload_3 v3
+      [59] invokevirtual #19
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+      [62] pop
+      [63] aload v4
+      [65] invokevirtual #24
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.setResult (ILandroid/content/Intent;)V]
+      [68] aload_0 v0
+      [69] getfield #13
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/a.a Larnodenhond/mediashortcut/addshortcut/AddShortcut;]
+      [72] ldc #1
+        + Integer [2131034117]
+      [74] iconst_0
+      [75] invokestatic #21
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+      [78] invokevirtual #22
+        + Methodref [android/widget/Toast.show ()V]
+      [81] aload_0 v0
+      [82] getfield #13
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/a.a Larnodenhond/mediashortcut/addshortcut/AddShortcut;]
+      [85] invokevirtual #23
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.finish ()V]
+      [88] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: arnodenhond/mediashortcut/addshortcut/b
+  Superclass:    java/lang/Object
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class arnodenhond.mediashortcut.addshortcut.b extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/content/DialogInterface$OnCancelListener]
+
+Constant Pool (count = 38):
+  + Integer [2131034118]
+  + Class [android/content/DialogInterface$OnCancelListener]
+  + Class [android/widget/Toast]
+  + Class [arnodenhond/mediashortcut/addshortcut/AddShortcut]
+  + Class [arnodenhond/mediashortcut/addshortcut/b]
+  + Class [java/lang/Object]
+  + Fieldref [arnodenhond/mediashortcut/addshortcut/b.a Larnodenhond/mediashortcut/addshortcut/AddShortcut;]
+  + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+  + Methodref [android/widget/Toast.show ()V]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.finish ()V]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.setResult (I)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Larnodenhond/mediashortcut/addshortcut/AddShortcut;]
+  + NameAndType [finish ()V]
+  + NameAndType [makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+  + NameAndType [setResult (I)V]
+  + NameAndType [show ()V]
+  + Utf8 [()V]
+  + Utf8 [(I)V]
+  + Utf8 [(Landroid/content/Context;II)Landroid/widget/Toast;]
+  + Utf8 [(Landroid/content/DialogInterface;)V]
+  + Utf8 [(Larnodenhond/mediashortcut/addshortcut/AddShortcut;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Larnodenhond/mediashortcut/addshortcut/AddShortcut;]
+  + Utf8 [a]
+  + Utf8 [android/content/DialogInterface$OnCancelListener]
+  + Utf8 [android/widget/Toast]
+  + Utf8 [arnodenhond/mediashortcut/addshortcut/AddShortcut]
+  + Utf8 [arnodenhond/mediashortcut/addshortcut/b]
+  + Utf8 [finish]
+  + Utf8 [java/lang/Object]
+  + Utf8 [makeText]
+  + Utf8 [onCancel]
+  + Utf8 [setResult]
+  + Utf8 [show]
+
+Fields (count = 1):
+  + Field:        a Larnodenhond/mediashortcut/addshortcut/AddShortcut;
+    Access flags: 0x1010
+      = final synthetic arnodenhond.mediashortcut.addshortcut.AddShortcut a
+
+Methods (count = 2):
+  - Method:       <init>(Larnodenhond/mediashortcut/addshortcut/AddShortcut;)V
+    Access flags: 0x0
+      = b(arnodenhond.mediashortcut.addshortcut.AddShortcut)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #7
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/b.a Larnodenhond/mediashortcut/addshortcut/AddShortcut;]
+      [5] aload_0 v0
+      [6] invokespecial #12
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCancel(Landroid/content/DialogInterface;)V
+    Access flags: 0x11
+      = public final void onCancel(android.content.DialogInterface)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 29, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] getfield #7
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/b.a Larnodenhond/mediashortcut/addshortcut/AddShortcut;]
+      [4] iconst_0
+      [5] invokevirtual #11
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.setResult (I)V]
+      [8] aload_0 v0
+      [9] getfield #7
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/b.a Larnodenhond/mediashortcut/addshortcut/AddShortcut;]
+      [12] ldc #1
+        + Integer [2131034118]
+      [14] iconst_0
+      [15] invokestatic #8
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+      [18] invokevirtual #9
+        + Methodref [android/widget/Toast.show ()V]
+      [21] aload_0 v0
+      [22] getfield #7
+        + Fieldref [arnodenhond/mediashortcut/addshortcut/b.a Larnodenhond/mediashortcut/addshortcut/AddShortcut;]
+      [25] invokevirtual #10
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.finish ()V]
+      [28] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: arnodenhond/mediashortcut/addshortcut/AddVideo
+  Superclass:    arnodenhond/mediashortcut/addshortcut/AddShortcut
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class arnodenhond.mediashortcut.addshortcut.AddVideo extends arnodenhond.mediashortcut.addshortcut.AddShortcut
+
+Interfaces (count = 0):
+
+Constant Pool (count = 47):
+  + String [_display_name]
+  + String [_id]
+  + String [video/*]
+  + Class [android/net/Uri]
+  + Class [android/provider/MediaStore$Video$Thumbnails]
+  + Class [arnodenhond/mediashortcut/addshortcut/AddShortcut]
+  + Class [arnodenhond/mediashortcut/addshortcut/AddVideo]
+  + Class [java/lang/Integer]
+  + Class [java/lang/Throwable]
+  + Methodref [android/net/Uri.getLastPathSegment ()Ljava/lang/String;]
+  + Methodref [android/provider/MediaStore$Video$Thumbnails.getThumbnail (Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.<init> ()V]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddVideo.a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + Methodref [arnodenhond/mediashortcut/addshortcut/AddVideo.getContentResolver ()Landroid/content/ContentResolver;]
+  + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + NameAndType [getContentResolver ()Landroid/content/ContentResolver;]
+  + NameAndType [getLastPathSegment ()Ljava/lang/String;]
+  + NameAndType [getThumbnail (Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+  + NameAndType [parseInt (Ljava/lang/String;)I]
+  + Utf8 [()Landroid/content/ContentResolver;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/net/Uri;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Ljava/lang/String;)I]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [_display_name]
+  + Utf8 [_id]
+  + Utf8 [a]
+  + Utf8 [android/net/Uri]
+  + Utf8 [android/provider/MediaStore$Video$Thumbnails]
+  + Utf8 [arnodenhond/mediashortcut/addshortcut/AddShortcut]
+  + Utf8 [arnodenhond/mediashortcut/addshortcut/AddVideo]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [getContentResolver]
+  + Utf8 [getLastPathSegment]
+  + Utf8 [getThumbnail]
+  + Utf8 [java/lang/Integer]
+  + Utf8 [java/lang/Throwable]
+  + Utf8 [parseInt]
+  + Utf8 [video/*]
+
+Fields (count = 0):
+
+Methods (count = 5):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public AddVideo()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #12
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddShortcut.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Landroid/net/Uri;)Landroid/graphics/Bitmap;
+    Access flags: 0x11
+      = public final android.graphics.Bitmap a(android.net.Uri)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 25, locals = 2, stack = 6):
+      [0] aload_0 v0
+      [1] aload_0 v0
+      [2] invokevirtual #14
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddVideo.getContentResolver ()Landroid/content/ContentResolver;]
+      [5] aload_1 v1
+      [6] invokevirtual #10
+        + Methodref [android/net/Uri.getLastPathSegment ()Ljava/lang/String;]
+      [9] invokestatic #15
+        + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+      [12] i2l
+      [13] iconst_3
+      [14] aconst_null
+      [15] invokestatic #11
+        + Methodref [android/provider/MediaStore$Video$Thumbnails.getThumbnail (Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+      [18] invokevirtual #13
+        + Methodref [arnodenhond/mediashortcut/addshortcut/AddVideo.a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+      [21] areturn
+      [22] pop
+      [23] aconst_null
+      [24] areturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (0 -> 21: 22):
+      + Class [java/lang/Throwable]
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()Ljava/lang/String;
+    Access flags: 0x11
+      = public final java.lang.String a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 3, locals = 1, stack = 1):
+      [0] ldc #2
+        + String [_id]
+      [2] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b()Ljava/lang/String;
+    Access flags: 0x11
+      = public final java.lang.String b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 3, locals = 1, stack = 1):
+      [0] ldc #1
+        + String [_display_name]
+      [2] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       c()Ljava/lang/String;
+    Access flags: 0x10
+      = final java.lang.String c()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 3, locals = 1, stack = 1):
+      [0] ldc #3
+        + String [video/*]
+      [2] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: arnodenhond/mediashortcut/shareshortcut/ShareImage
+  Superclass:    arnodenhond/mediashortcut/shareshortcut/ShareShortcut
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class arnodenhond.mediashortcut.shareshortcut.ShareImage extends arnodenhond.mediashortcut.shareshortcut.ShareShortcut
+
+Interfaces (count = 0):
+
+Constant Pool (count = 44):
+  + String [_display_name]
+  + String [_id]
+  + Class [android/net/Uri]
+  + Class [android/provider/MediaStore$Images$Thumbnails]
+  + Class [arnodenhond/mediashortcut/shareshortcut/ShareImage]
+  + Class [arnodenhond/mediashortcut/shareshortcut/ShareShortcut]
+  + Class [java/lang/Integer]
+  + Class [java/lang/Throwable]
+  + Methodref [android/net/Uri.getLastPathSegment ()Ljava/lang/String;]
+  + Methodref [android/provider/MediaStore$Images$Thumbnails.getThumbnail (Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareImage.a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareImage.getContentResolver ()Landroid/content/ContentResolver;]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.<init> ()V]
+  + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + NameAndType [getContentResolver ()Landroid/content/ContentResolver;]
+  + NameAndType [getLastPathSegment ()Ljava/lang/String;]
+  + NameAndType [getThumbnail (Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+  + NameAndType [parseInt (Ljava/lang/String;)I]
+  + Utf8 [()Landroid/content/ContentResolver;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/net/Uri;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Ljava/lang/String;)I]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [_display_name]
+  + Utf8 [_id]
+  + Utf8 [a]
+  + Utf8 [android/net/Uri]
+  + Utf8 [android/provider/MediaStore$Images$Thumbnails]
+  + Utf8 [arnodenhond/mediashortcut/shareshortcut/ShareImage]
+  + Utf8 [arnodenhond/mediashortcut/shareshortcut/ShareShortcut]
+  + Utf8 [b]
+  + Utf8 [getContentResolver]
+  + Utf8 [getLastPathSegment]
+  + Utf8 [getThumbnail]
+  + Utf8 [java/lang/Integer]
+  + Utf8 [java/lang/Throwable]
+  + Utf8 [parseInt]
+
+Fields (count = 0):
+
+Methods (count = 4):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public ShareImage()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #13
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Landroid/net/Uri;)Landroid/graphics/Bitmap;
+    Access flags: 0x11
+      = public final android.graphics.Bitmap a(android.net.Uri)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 25, locals = 2, stack = 6):
+      [0] aload_0 v0
+      [1] aload_0 v0
+      [2] invokevirtual #12
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareImage.getContentResolver ()Landroid/content/ContentResolver;]
+      [5] aload_1 v1
+      [6] invokevirtual #9
+        + Methodref [android/net/Uri.getLastPathSegment ()Ljava/lang/String;]
+      [9] invokestatic #14
+        + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+      [12] i2l
+      [13] iconst_3
+      [14] aconst_null
+      [15] invokestatic #10
+        + Methodref [android/provider/MediaStore$Images$Thumbnails.getThumbnail (Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+      [18] invokevirtual #11
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareImage.a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+      [21] areturn
+      [22] pop
+      [23] aconst_null
+      [24] areturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (0 -> 21: 22):
+      + Class [java/lang/Throwable]
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()Ljava/lang/String;
+    Access flags: 0x11
+      = public final java.lang.String a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 3, locals = 1, stack = 1):
+      [0] ldc #2
+        + String [_id]
+      [2] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b()Ljava/lang/String;
+    Access flags: 0x11
+      = public final java.lang.String b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 3, locals = 1, stack = 1):
+      [0] ldc #1
+        + String [_display_name]
+      [2] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: arnodenhond/mediashortcut/shareshortcut/ShareShortcut
+  Superclass:    arnodenhond/mediashortcut/MediaShortcut
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x421
+    = public abstract class arnodenhond.mediashortcut.shareshortcut.ShareShortcut extends arnodenhond.mediashortcut.MediaShortcut
+
+Interfaces (count = 0):
+
+Constant Pool (count = 175):
+  + Integer [2131034118]
+  + Integer [2131034119]
+  + Integer [2131034120]
+  + Integer [2131034121]
+  + Integer [2131034122]
+  + String [android.intent.extra.STREAM]
+  + String [aspectX]
+  + String [aspectY]
+  + String [com.android.camera.action.CROP]
+  + String [crop]
+  + String [data]
+  + String [outputX]
+  + String [outputY]
+  + String [return-data]
+  + String [scale]
+  + String [true]
+  + Class [android/app/AlertDialog$Builder]
+  + Class [android/content/Intent]
+  + Class [android/content/pm/PackageManager]
+  + Class [android/graphics/Bitmap]
+  + Class [android/graphics/drawable/BitmapDrawable]
+  + Class [android/net/Uri]
+  + Class [android/widget/Toast]
+  + Class [arnodenhond/mediashortcut/MediaShortcut]
+  + Class [arnodenhond/mediashortcut/shareshortcut/ShareShortcut]
+  + Class [arnodenhond/mediashortcut/shareshortcut/a]
+  + Class [arnodenhond/mediashortcut/shareshortcut/b]
+  + Class [java/util/List]
+  + Fieldref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.a Landroid/net/Uri;]
+  + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+  + Methodref [android/app/AlertDialog$Builder.setIcon (Landroid/graphics/drawable/Drawable;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setNeutralButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setOnCancelListener (Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setTitle (I)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setView (Landroid/view/View;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
+  + Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
+  + Methodref [android/content/Intent.getParcelableExtra (Ljava/lang/String;)Landroid/os/Parcelable;]
+  + Methodref [android/content/Intent.putExtra (Ljava/lang/String;I)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Z)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.setData (Landroid/net/Uri;)Landroid/content/Intent;]
+  + Methodref [android/content/pm/PackageManager.queryIntentActivities (Landroid/content/Intent;I)Ljava/util/List;]
+  + Methodref [android/graphics/drawable/BitmapDrawable.<init> (Landroid/graphics/Bitmap;)V]
+  + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+  + Methodref [android/widget/Toast.show ()V]
+  + Methodref [arnodenhond/mediashortcut/MediaShortcut.<init> ()V]
+  + Methodref [arnodenhond/mediashortcut/MediaShortcut.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.a (Landroid/net/Uri;)Landroid/graphics/Bitmap;]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.a (Ljava/lang/String;)Landroid/widget/EditText;]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.b (Landroid/net/Uri;)Landroid/content/Intent;]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.c (Landroid/net/Uri;)Ljava/lang/String;]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.finish ()V]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.getIntent ()Landroid/content/Intent;]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.getPackageManager ()Landroid/content/pm/PackageManager;]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.onActivityResult (IILandroid/content/Intent;)V]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.setResult (I)V]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.startActivityForResult (Landroid/content/Intent;I)V]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/a.<init> (Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;Landroid/content/Intent;Landroid/graphics/Bitmap;Landroid/widget/EditText;)V]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/b.<init> (Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;)V]
+  + InterfaceMethodref [java/util/List.isEmpty ()Z]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;)V]
+  + NameAndType [<init> (Landroid/graphics/Bitmap;)V]
+  + NameAndType [<init> (Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;)V]
+  + NameAndType [<init> (Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;Landroid/content/Intent;Landroid/graphics/Bitmap;Landroid/widget/EditText;)V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + NameAndType [a (Landroid/net/Uri;)Landroid/graphics/Bitmap;]
+  + NameAndType [a (Ljava/lang/String;)Landroid/widget/EditText;]
+  + NameAndType [a Landroid/net/Uri;]
+  + NameAndType [b (Landroid/net/Uri;)Landroid/content/Intent;]
+  + NameAndType [c (Landroid/net/Uri;)Ljava/lang/String;]
+  + NameAndType [finish ()V]
+  + NameAndType [getIntent ()Landroid/content/Intent;]
+  + NameAndType [getPackageManager ()Landroid/content/pm/PackageManager;]
+  + NameAndType [getParcelableExtra (Ljava/lang/String;)Landroid/os/Parcelable;]
+  + NameAndType [isEmpty ()Z]
+  + NameAndType [makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+  + NameAndType [onActivityResult (IILandroid/content/Intent;)V]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [putExtra (Ljava/lang/String;I)Landroid/content/Intent;]
+  + NameAndType [putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [putExtra (Ljava/lang/String;Z)Landroid/content/Intent;]
+  + NameAndType [queryIntentActivities (Landroid/content/Intent;I)Ljava/util/List;]
+  + NameAndType [setData (Landroid/net/Uri;)Landroid/content/Intent;]
+  + NameAndType [setIcon (Landroid/graphics/drawable/Drawable;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setNeutralButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setOnCancelListener (Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setResult (I)V]
+  + NameAndType [setTitle (I)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setView (Landroid/view/View;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [show ()Landroid/app/AlertDialog;]
+  + NameAndType [show ()V]
+  + NameAndType [startActivityForResult (Landroid/content/Intent;I)V]
+  + Utf8 [()Landroid/app/AlertDialog;]
+  + Utf8 [()Landroid/content/Intent;]
+  + Utf8 [()Landroid/content/pm/PackageManager;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(I)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(I)V]
+  + Utf8 [(IILandroid/content/Intent;)V]
+  + Utf8 [(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Landroid/content/Context;)V]
+  + Utf8 [(Landroid/content/Context;II)Landroid/widget/Toast;]
+  + Utf8 [(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Landroid/content/Intent;I)Ljava/util/List;]
+  + Utf8 [(Landroid/content/Intent;I)V]
+  + Utf8 [(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/graphics/Bitmap;)V]
+  + Utf8 [(Landroid/graphics/drawable/Drawable;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Landroid/net/Uri;)Landroid/content/Intent;]
+  + Utf8 [(Landroid/net/Uri;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/net/Uri;)Ljava/lang/String;]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/View;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;)V]
+  + Utf8 [(Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;Landroid/content/Intent;Landroid/graphics/Bitmap;Landroid/widget/EditText;)V]
+  + Utf8 [(Ljava/lang/String;)Landroid/os/Parcelable;]
+  + Utf8 [(Ljava/lang/String;)Landroid/widget/EditText;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;I)Landroid/content/Intent;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [(Ljava/lang/String;Z)Landroid/content/Intent;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/net/Uri;]
+  + Utf8 [a]
+  + Utf8 [android.intent.extra.STREAM]
+  + Utf8 [android/app/AlertDialog$Builder]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/content/pm/PackageManager]
+  + Utf8 [android/graphics/Bitmap]
+  + Utf8 [android/graphics/drawable/BitmapDrawable]
+  + Utf8 [android/net/Uri]
+  + Utf8 [android/widget/Toast]
+  + Utf8 [arnodenhond/mediashortcut/MediaShortcut]
+  + Utf8 [arnodenhond/mediashortcut/shareshortcut/ShareShortcut]
+  + Utf8 [arnodenhond/mediashortcut/shareshortcut/a]
+  + Utf8 [arnodenhond/mediashortcut/shareshortcut/b]
+  + Utf8 [aspectX]
+  + Utf8 [aspectY]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com.android.camera.action.CROP]
+  + Utf8 [crop]
+  + Utf8 [data]
+  + Utf8 [finish]
+  + Utf8 [getIntent]
+  + Utf8 [getPackageManager]
+  + Utf8 [getParcelableExtra]
+  + Utf8 [isEmpty]
+  + Utf8 [java/util/List]
+  + Utf8 [makeText]
+  + Utf8 [onActivityResult]
+  + Utf8 [onCreate]
+  + Utf8 [outputX]
+  + Utf8 [outputY]
+  + Utf8 [putExtra]
+  + Utf8 [queryIntentActivities]
+  + Utf8 [return-data]
+  + Utf8 [scale]
+  + Utf8 [setData]
+  + Utf8 [setIcon]
+  + Utf8 [setNeutralButton]
+  + Utf8 [setOnCancelListener]
+  + Utf8 [setResult]
+  + Utf8 [setTitle]
+  + Utf8 [setView]
+  + Utf8 [show]
+  + Utf8 [startActivityForResult]
+  + Utf8 [true]
+
+Fields (count = 1):
+  + Field:        a Landroid/net/Uri;
+    Access flags: 0x0
+      = android.net.Uri a
+
+Methods (count = 3):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public ShareShortcut()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #47
+        + Methodref [arnodenhond/mediashortcut/MediaShortcut.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 141, locals = 2, stack = 4):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #48
+        + Methodref [arnodenhond/mediashortcut/MediaShortcut.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] aload_0 v0
+      [7] invokevirtual #55
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.getIntent ()Landroid/content/Intent;]
+      [10] ldc #6
+        + String [android.intent.extra.STREAM]
+      [12] invokevirtual #38
+        + Methodref [android/content/Intent.getParcelableExtra (Ljava/lang/String;)Landroid/os/Parcelable;]
+      [15] checkcast #22
+        + Class [android/net/Uri]
+      [18] putfield #29
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.a Landroid/net/Uri;]
+      [21] new #18
+        + Class [android/content/Intent]
+      [24] dup
+      [25] ldc #9
+        + String [com.android.camera.action.CROP]
+      [27] invokespecial #37
+        + Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
+      [30] dup
+      [31] astore_1 v1
+      [32] aload_0 v0
+      [33] getfield #29
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.a Landroid/net/Uri;]
+      [36] invokevirtual #42
+        + Methodref [android/content/Intent.setData (Landroid/net/Uri;)Landroid/content/Intent;]
+      [39] pop
+      [40] aload_1 v1
+      [41] ldc #10
+        + String [crop]
+      [43] ldc #16
+        + String [true]
+      [45] invokevirtual #40
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+      [48] pop
+      [49] aload_1 v1
+      [50] ldc #12
+        + String [outputX]
+      [52] bipush 100
+      [54] invokevirtual #39
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;I)Landroid/content/Intent;]
+      [57] pop
+      [58] aload_1 v1
+      [59] ldc #13
+        + String [outputY]
+      [61] bipush 100
+      [63] invokevirtual #39
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;I)Landroid/content/Intent;]
+      [66] pop
+      [67] aload_1 v1
+      [68] ldc #7
+        + String [aspectX]
+      [70] iconst_1
+      [71] invokevirtual #39
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;I)Landroid/content/Intent;]
+      [74] pop
+      [75] aload_1 v1
+      [76] ldc #8
+        + String [aspectY]
+      [78] iconst_1
+      [79] invokevirtual #39
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;I)Landroid/content/Intent;]
+      [82] pop
+      [83] aload_1 v1
+      [84] ldc #15
+        + String [scale]
+      [86] iconst_1
+      [87] invokevirtual #41
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Z)Landroid/content/Intent;]
+      [90] pop
+      [91] aload_1 v1
+      [92] ldc #14
+        + String [return-data]
+      [94] iconst_1
+      [95] invokevirtual #41
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Z)Landroid/content/Intent;]
+      [98] pop
+      [99] aload_0 v0
+      [100] invokevirtual #56
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.getPackageManager ()Landroid/content/pm/PackageManager;]
+      [103] aload_1 v1
+      [104] iconst_0
+      [105] invokevirtual #43
+        + Methodref [android/content/pm/PackageManager.queryIntentActivities (Landroid/content/Intent;I)Ljava/util/List;]
+      [108] invokeinterface #62
+        + InterfaceMethodref [java/util/List.isEmpty ()Z]
+      [113] ifne +10 (target=123)
+      [116] aload_0 v0
+      [117] aload_1 v1
+      [118] iconst_2
+      [119] invokevirtual #59
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.startActivityForResult (Landroid/content/Intent;I)V]
+      [122] return
+      [123] aload_0 v0
+      [124] ldc #3
+        + Integer [2131034120]
+      [126] iconst_0
+      [127] invokestatic #45
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+      [130] invokevirtual #46
+        + Methodref [android/widget/Toast.show ()V]
+      [133] aload_0 v0
+      [134] iconst_0
+      [135] iconst_m1
+      [136] aconst_null
+      [137] invokevirtual #57
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.onActivityResult (IILandroid/content/Intent;)V]
+      [140] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onActivityResult(IILandroid/content/Intent;)V
+    Access flags: 0x4
+      = protected void onActivityResult(int,int,android.content.Intent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 181, locals = 5, stack = 8):
+      [0] iload_2 v2
+      [1] iconst_m1
+      [2] ificmpeq +23 (target=25)
+      [5] aload_0 v0
+      [6] iconst_0
+      [7] invokevirtual #58
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.setResult (I)V]
+      [10] aload_0 v0
+      [11] ldc #1
+        + Integer [2131034118]
+      [13] iconst_0
+      [14] invokestatic #45
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+      [17] invokevirtual #46
+        + Methodref [android/widget/Toast.show ()V]
+      [20] aload_0 v0
+      [21] invokevirtual #54
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.finish ()V]
+      [24] return
+      [25] aload_0 v0
+      [26] aload_0 v0
+      [27] getfield #29
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.a Landroid/net/Uri;]
+      [30] invokevirtual #53
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.c (Landroid/net/Uri;)Ljava/lang/String;]
+      [33] astore_2 v2
+      [34] iload_1 v1
+      [35] iconst_2
+      [36] ificmpne +20 (target=56)
+      [39] aload_0 v0
+      [40] aload_3 v3
+      [41] ldc #11
+        + String [data]
+      [43] invokevirtual #38
+        + Methodref [android/content/Intent.getParcelableExtra (Ljava/lang/String;)Landroid/os/Parcelable;]
+      [46] checkcast #20
+        + Class [android/graphics/Bitmap]
+      [49] invokevirtual #49
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+      [52] astore_1 v1
+      [53] goto +12 (target=65)
+      [56] aload_0 v0
+      [57] aload_0 v0
+      [58] getfield #29
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.a Landroid/net/Uri;]
+      [61] invokevirtual #50
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.a (Landroid/net/Uri;)Landroid/graphics/Bitmap;]
+      [64] astore_1 v1
+      [65] aload_1 v1
+      [66] ifnonnull +23 (target=89)
+      [69] aload_0 v0
+      [70] iconst_0
+      [71] invokevirtual #58
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.setResult (I)V]
+      [74] aload_0 v0
+      [75] ldc #2
+        + Integer [2131034119]
+      [77] iconst_0
+      [78] invokestatic #45
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+      [81] invokevirtual #46
+        + Methodref [android/widget/Toast.show ()V]
+      [84] aload_0 v0
+      [85] invokevirtual #54
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.finish ()V]
+      [88] return
+      [89] aload_0 v0
+      [90] getfield #29
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.a Landroid/net/Uri;]
+      [93] invokestatic #52
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.b (Landroid/net/Uri;)Landroid/content/Intent;]
+      [96] astore_3 v3
+      [97] new #17
+        + Class [android/app/AlertDialog$Builder]
+      [100] dup
+      [101] aload_0 v0
+      [102] invokespecial #30
+        + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+      [105] dup
+      [106] astore v4
+      [108] ldc #4
+        + Integer [2131034121]
+      [110] invokevirtual #34
+        + Methodref [android/app/AlertDialog$Builder.setTitle (I)Landroid/app/AlertDialog$Builder;]
+      [113] pop
+      [114] aload_0 v0
+      [115] aload_2 v2
+      [116] invokevirtual #51
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.a (Ljava/lang/String;)Landroid/widget/EditText;]
+      [119] astore_2 v2
+      [120] aload v4
+      [122] aload_2 v2
+      [123] invokevirtual #35
+        + Methodref [android/app/AlertDialog$Builder.setView (Landroid/view/View;)Landroid/app/AlertDialog$Builder;]
+      [126] pop
+      [127] aload v4
+      [129] new #21
+        + Class [android/graphics/drawable/BitmapDrawable]
+      [132] dup
+      [133] aload_1 v1
+      [134] invokespecial #44
+        + Methodref [android/graphics/drawable/BitmapDrawable.<init> (Landroid/graphics/Bitmap;)V]
+      [137] invokevirtual #31
+        + Methodref [android/app/AlertDialog$Builder.setIcon (Landroid/graphics/drawable/Drawable;)Landroid/app/AlertDialog$Builder;]
+      [140] pop
+      [141] aload v4
+      [143] ldc #5
+        + Integer [2131034122]
+      [145] new #26
+        + Class [arnodenhond/mediashortcut/shareshortcut/a]
+      [148] dup
+      [149] aload_0 v0
+      [150] aload_3 v3
+      [151] aload_1 v1
+      [152] aload_2 v2
+      [153] invokespecial #60
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/a.<init> (Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;Landroid/content/Intent;Landroid/graphics/Bitmap;Landroid/widget/EditText;)V]
+      [156] invokevirtual #32
+        + Methodref [android/app/AlertDialog$Builder.setNeutralButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [159] pop
+      [160] aload v4
+      [162] new #27
+        + Class [arnodenhond/mediashortcut/shareshortcut/b]
+      [165] dup
+      [166] aload_0 v0
+      [167] invokespecial #61
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/b.<init> (Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;)V]
+      [170] invokevirtual #33
+        + Methodref [android/app/AlertDialog$Builder.setOnCancelListener (Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;]
+      [173] pop
+      [174] aload v4
+      [176] invokevirtual #36
+        + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
+      [179] pop
+      [180] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: arnodenhond/mediashortcut/shareshortcut/a
+  Superclass:    java/lang/Object
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class arnodenhond.mediashortcut.shareshortcut.a extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/content/DialogInterface$OnClickListener]
+
+Constant Pool (count = 84):
+  + Integer [2131034117]
+  + String [android.intent.extra.shortcut.ICON]
+  + String [android.intent.extra.shortcut.INTENT]
+  + String [android.intent.extra.shortcut.NAME]
+  + String [com.android.launcher.action.INSTALL_SHORTCUT]
+  + Class [android/content/DialogInterface$OnClickListener]
+  + Class [android/content/Intent]
+  + Class [android/text/Editable]
+  + Class [android/widget/EditText]
+  + Class [android/widget/Toast]
+  + Class [arnodenhond/mediashortcut/shareshortcut/ShareShortcut]
+  + Class [arnodenhond/mediashortcut/shareshortcut/a]
+  + Class [java/lang/Object]
+  + Fieldref [arnodenhond/mediashortcut/shareshortcut/a.a Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;]
+  + Fieldref [arnodenhond/mediashortcut/shareshortcut/a.b Landroid/content/Intent;]
+  + Fieldref [arnodenhond/mediashortcut/shareshortcut/a.c Landroid/graphics/Bitmap;]
+  + Fieldref [arnodenhond/mediashortcut/shareshortcut/a.d Landroid/widget/EditText;]
+  + Methodref [android/content/Intent.<init> ()V]
+  + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.setAction (Ljava/lang/String;)Landroid/content/Intent;]
+  + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
+  + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+  + Methodref [android/widget/Toast.show ()V]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.finish ()V]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.sendBroadcast (Landroid/content/Intent;)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + InterfaceMethodref [android/text/Editable.toString ()Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;]
+  + NameAndType [b Landroid/content/Intent;]
+  + NameAndType [c Landroid/graphics/Bitmap;]
+  + NameAndType [d Landroid/widget/EditText;]
+  + NameAndType [finish ()V]
+  + NameAndType [getText ()Landroid/text/Editable;]
+  + NameAndType [makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+  + NameAndType [putExtra (Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;]
+  + NameAndType [putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [sendBroadcast (Landroid/content/Intent;)V]
+  + NameAndType [setAction (Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [show ()V]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + Utf8 [()Landroid/text/Editable;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/Context;II)Landroid/widget/Toast;]
+  + Utf8 [(Landroid/content/DialogInterface;I)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;Landroid/content/Intent;Landroid/graphics/Bitmap;Landroid/widget/EditText;)V]
+  + Utf8 [(Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/content/Intent;]
+  + Utf8 [Landroid/graphics/Bitmap;]
+  + Utf8 [Landroid/widget/EditText;]
+  + Utf8 [Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;]
+  + Utf8 [a]
+  + Utf8 [android.intent.extra.shortcut.ICON]
+  + Utf8 [android.intent.extra.shortcut.INTENT]
+  + Utf8 [android.intent.extra.shortcut.NAME]
+  + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/text/Editable]
+  + Utf8 [android/widget/EditText]
+  + Utf8 [android/widget/Toast]
+  + Utf8 [arnodenhond/mediashortcut/shareshortcut/ShareShortcut]
+  + Utf8 [arnodenhond/mediashortcut/shareshortcut/a]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com.android.launcher.action.INSTALL_SHORTCUT]
+  + Utf8 [d]
+  + Utf8 [finish]
+  + Utf8 [getText]
+  + Utf8 [java/lang/Object]
+  + Utf8 [makeText]
+  + Utf8 [onClick]
+  + Utf8 [putExtra]
+  + Utf8 [sendBroadcast]
+  + Utf8 [setAction]
+  + Utf8 [show]
+  + Utf8 [toString]
+
+Fields (count = 4):
+  + Field:        a Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;
+    Access flags: 0x1010
+      = final synthetic arnodenhond.mediashortcut.shareshortcut.ShareShortcut a
+  + Field:        b Landroid/content/Intent;
+    Access flags: 0x1012
+      = private final synthetic android.content.Intent b
+  + Field:        c Landroid/graphics/Bitmap;
+    Access flags: 0x1012
+      = private final synthetic android.graphics.Bitmap c
+  + Field:        d Landroid/widget/EditText;
+    Access flags: 0x1012
+      = private final synthetic android.widget.EditText d
+
+Methods (count = 2):
+  - Method:       <init>(Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;Landroid/content/Intent;Landroid/graphics/Bitmap;Landroid/widget/EditText;)V
+    Access flags: 0x0
+      = a(arnodenhond.mediashortcut.shareshortcut.ShareShortcut,android.content.Intent,android.graphics.Bitmap,android.widget.EditText)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 26, locals = 5, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #14
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/a.a Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;]
+      [5] aload_0 v0
+      [6] aload_2 v2
+      [7] putfield #15
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/a.b Landroid/content/Intent;]
+      [10] aload_0 v0
+      [11] aload_3 v3
+      [12] putfield #16
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/a.c Landroid/graphics/Bitmap;]
+      [15] aload_0 v0
+      [16] aload v4
+      [18] putfield #17
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/a.d Landroid/widget/EditText;]
+      [21] aload_0 v0
+      [22] invokespecial #27
+        + Methodref [java/lang/Object.<init> ()V]
+      [25] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/content/DialogInterface;I)V
+    Access flags: 0x11
+      = public final void onClick(android.content.DialogInterface,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 96, locals = 5, stack = 4):
+      [0] aload_0 v0
+      [1] getfield #14
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/a.a Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;]
+      [4] aload_0 v0
+      [5] getfield #15
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/a.b Landroid/content/Intent;]
+      [8] aload_0 v0
+      [9] getfield #16
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/a.c Landroid/graphics/Bitmap;]
+      [12] aload_0 v0
+      [13] getfield #17
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/a.d Landroid/widget/EditText;]
+      [16] invokevirtual #22
+        + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
+      [19] invokeinterface #28
+        + InterfaceMethodref [android/text/Editable.toString ()Ljava/lang/String;]
+      [24] astore_3 v3
+      [25] astore_2 v2
+      [26] astore_1 v1
+      [27] new #7
+        + Class [android/content/Intent]
+      [30] dup
+      [31] invokespecial #18
+        + Methodref [android/content/Intent.<init> ()V]
+      [34] dup
+      [35] astore v4
+      [37] ldc #3
+        + String [android.intent.extra.shortcut.INTENT]
+      [39] aload_1 v1
+      [40] invokevirtual #19
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;]
+      [43] pop
+      [44] aload v4
+      [46] ldc #2
+        + String [android.intent.extra.shortcut.ICON]
+      [48] aload_2 v2
+      [49] invokevirtual #19
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;]
+      [52] pop
+      [53] aload v4
+      [55] ldc #4
+        + String [android.intent.extra.shortcut.NAME]
+      [57] aload_3 v3
+      [58] invokevirtual #20
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+      [61] pop
+      [62] aload v4
+      [64] ldc #5
+        + String [com.android.launcher.action.INSTALL_SHORTCUT]
+      [66] invokevirtual #21
+        + Methodref [android/content/Intent.setAction (Ljava/lang/String;)Landroid/content/Intent;]
+      [69] pop
+      [70] aload v4
+      [72] invokevirtual #26
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.sendBroadcast (Landroid/content/Intent;)V]
+      [75] aload_0 v0
+      [76] getfield #14
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/a.a Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;]
+      [79] ldc #1
+        + Integer [2131034117]
+      [81] iconst_0
+      [82] invokestatic #23
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+      [85] invokevirtual #24
+        + Methodref [android/widget/Toast.show ()V]
+      [88] aload_0 v0
+      [89] getfield #14
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/a.a Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;]
+      [92] invokevirtual #25
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.finish ()V]
+      [95] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: arnodenhond/mediashortcut/shareshortcut/b
+  Superclass:    java/lang/Object
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class arnodenhond.mediashortcut.shareshortcut.b extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/content/DialogInterface$OnCancelListener]
+
+Constant Pool (count = 38):
+  + Integer [2131034118]
+  + Class [android/content/DialogInterface$OnCancelListener]
+  + Class [android/widget/Toast]
+  + Class [arnodenhond/mediashortcut/shareshortcut/ShareShortcut]
+  + Class [arnodenhond/mediashortcut/shareshortcut/b]
+  + Class [java/lang/Object]
+  + Fieldref [arnodenhond/mediashortcut/shareshortcut/b.a Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;]
+  + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+  + Methodref [android/widget/Toast.show ()V]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.finish ()V]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.setResult (I)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;]
+  + NameAndType [finish ()V]
+  + NameAndType [makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+  + NameAndType [setResult (I)V]
+  + NameAndType [show ()V]
+  + Utf8 [()V]
+  + Utf8 [(I)V]
+  + Utf8 [(Landroid/content/Context;II)Landroid/widget/Toast;]
+  + Utf8 [(Landroid/content/DialogInterface;)V]
+  + Utf8 [(Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;]
+  + Utf8 [a]
+  + Utf8 [android/content/DialogInterface$OnCancelListener]
+  + Utf8 [android/widget/Toast]
+  + Utf8 [arnodenhond/mediashortcut/shareshortcut/ShareShortcut]
+  + Utf8 [arnodenhond/mediashortcut/shareshortcut/b]
+  + Utf8 [finish]
+  + Utf8 [java/lang/Object]
+  + Utf8 [makeText]
+  + Utf8 [onCancel]
+  + Utf8 [setResult]
+  + Utf8 [show]
+
+Fields (count = 1):
+  + Field:        a Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;
+    Access flags: 0x1010
+      = final synthetic arnodenhond.mediashortcut.shareshortcut.ShareShortcut a
+
+Methods (count = 2):
+  - Method:       <init>(Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;)V
+    Access flags: 0x0
+      = b(arnodenhond.mediashortcut.shareshortcut.ShareShortcut)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #7
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/b.a Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;]
+      [5] aload_0 v0
+      [6] invokespecial #12
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCancel(Landroid/content/DialogInterface;)V
+    Access flags: 0x11
+      = public final void onCancel(android.content.DialogInterface)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 29, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] getfield #7
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/b.a Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;]
+      [4] iconst_0
+      [5] invokevirtual #11
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.setResult (I)V]
+      [8] aload_0 v0
+      [9] getfield #7
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/b.a Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;]
+      [12] ldc #1
+        + Integer [2131034118]
+      [14] iconst_0
+      [15] invokestatic #8
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;II)Landroid/widget/Toast;]
+      [18] invokevirtual #9
+        + Methodref [android/widget/Toast.show ()V]
+      [21] aload_0 v0
+      [22] getfield #7
+        + Fieldref [arnodenhond/mediashortcut/shareshortcut/b.a Larnodenhond/mediashortcut/shareshortcut/ShareShortcut;]
+      [25] invokevirtual #10
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.finish ()V]
+      [28] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: arnodenhond/mediashortcut/shareshortcut/ShareVideo
+  Superclass:    arnodenhond/mediashortcut/shareshortcut/ShareShortcut
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class arnodenhond.mediashortcut.shareshortcut.ShareVideo extends arnodenhond.mediashortcut.shareshortcut.ShareShortcut
+
+Interfaces (count = 0):
+
+Constant Pool (count = 44):
+  + String [_display_name]
+  + String [_id]
+  + Class [android/net/Uri]
+  + Class [android/provider/MediaStore$Video$Thumbnails]
+  + Class [arnodenhond/mediashortcut/shareshortcut/ShareShortcut]
+  + Class [arnodenhond/mediashortcut/shareshortcut/ShareVideo]
+  + Class [java/lang/Integer]
+  + Class [java/lang/Throwable]
+  + Methodref [android/net/Uri.getLastPathSegment ()Ljava/lang/String;]
+  + Methodref [android/provider/MediaStore$Video$Thumbnails.getThumbnail (Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.<init> ()V]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareVideo.a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareVideo.getContentResolver ()Landroid/content/ContentResolver;]
+  + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + NameAndType [getContentResolver ()Landroid/content/ContentResolver;]
+  + NameAndType [getLastPathSegment ()Ljava/lang/String;]
+  + NameAndType [getThumbnail (Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+  + NameAndType [parseInt (Ljava/lang/String;)I]
+  + Utf8 [()Landroid/content/ContentResolver;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/net/Uri;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Ljava/lang/String;)I]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [_display_name]
+  + Utf8 [_id]
+  + Utf8 [a]
+  + Utf8 [android/net/Uri]
+  + Utf8 [android/provider/MediaStore$Video$Thumbnails]
+  + Utf8 [arnodenhond/mediashortcut/shareshortcut/ShareShortcut]
+  + Utf8 [arnodenhond/mediashortcut/shareshortcut/ShareVideo]
+  + Utf8 [b]
+  + Utf8 [getContentResolver]
+  + Utf8 [getLastPathSegment]
+  + Utf8 [getThumbnail]
+  + Utf8 [java/lang/Integer]
+  + Utf8 [java/lang/Throwable]
+  + Utf8 [parseInt]
+
+Fields (count = 0):
+
+Methods (count = 4):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public ShareVideo()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #11
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareShortcut.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Landroid/net/Uri;)Landroid/graphics/Bitmap;
+    Access flags: 0x11
+      = public final android.graphics.Bitmap a(android.net.Uri)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 25, locals = 2, stack = 6):
+      [0] aload_0 v0
+      [1] aload_0 v0
+      [2] invokevirtual #13
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareVideo.getContentResolver ()Landroid/content/ContentResolver;]
+      [5] aload_1 v1
+      [6] invokevirtual #9
+        + Methodref [android/net/Uri.getLastPathSegment ()Ljava/lang/String;]
+      [9] invokestatic #14
+        + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+      [12] i2l
+      [13] iconst_3
+      [14] aconst_null
+      [15] invokestatic #10
+        + Methodref [android/provider/MediaStore$Video$Thumbnails.getThumbnail (Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+      [18] invokevirtual #12
+        + Methodref [arnodenhond/mediashortcut/shareshortcut/ShareVideo.a (Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;]
+      [21] areturn
+      [22] pop
+      [23] aconst_null
+      [24] areturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (0 -> 21: 22):
+      + Class [java/lang/Throwable]
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()Ljava/lang/String;
+    Access flags: 0x11
+      = public final java.lang.String a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 3, locals = 1, stack = 1):
+      [0] ldc #2
+        + String [_id]
+      [2] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b()Ljava/lang/String;
+    Access flags: 0x11
+      = public final java.lang.String b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 3, locals = 1, stack = 1):
+      [0] ldc #1
+        + String [_display_name]
+      [2] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+

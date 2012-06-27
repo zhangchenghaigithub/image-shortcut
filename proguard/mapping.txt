@@ -1,0 +1,60 @@
+arnodenhond.mediashortcut.InfoActivity -> arnodenhond.mediashortcut.InfoActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void startmarket(android.view.View) -> startmarket
+arnodenhond.mediashortcut.Launcher -> arnodenhond.mediashortcut.Launcher:
+    void onCreate(android.os.Bundle) -> onCreate
+arnodenhond.mediashortcut.MediaShortcut -> arnodenhond.mediashortcut.MediaShortcut:
+    android.util.DisplayMetrics metrics -> a
+    java.lang.String getId() -> a
+    java.lang.String getName() -> b
+    android.graphics.Bitmap getThumbnail(android.net.Uri) -> a
+    android.widget.EditText getTitleEditText(java.lang.String) -> a
+    android.content.Intent getViewIntent(android.net.Uri) -> b
+    java.lang.String getTitleString(android.net.Uri) -> c
+    android.graphics.Bitmap iconify(android.graphics.Bitmap) -> a
+    int getIconSize() -> c
+arnodenhond.mediashortcut.addshortcut.AddImage -> arnodenhond.mediashortcut.addshortcut.AddImage:
+    android.graphics.Bitmap getThumbnail(android.net.Uri) -> a
+    java.lang.String getId() -> a
+    java.lang.String getName() -> b
+    java.lang.String getType() -> c
+arnodenhond.mediashortcut.addshortcut.AddShortcut -> arnodenhond.mediashortcut.addshortcut.AddShortcut:
+    android.net.Uri data -> a
+    java.lang.String getType() -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+arnodenhond.mediashortcut.addshortcut.AddShortcut$1 -> arnodenhond.mediashortcut.addshortcut.a:
+    arnodenhond.mediashortcut.addshortcut.AddShortcut this$0 -> a
+    android.content.Intent val$dataview -> b
+    android.graphics.Bitmap val$bitmap -> c
+    android.widget.EditText val$title -> d
+    void onClick(android.content.DialogInterface,int) -> onClick
+arnodenhond.mediashortcut.addshortcut.AddShortcut$2 -> arnodenhond.mediashortcut.addshortcut.b:
+    arnodenhond.mediashortcut.addshortcut.AddShortcut this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+arnodenhond.mediashortcut.addshortcut.AddVideo -> arnodenhond.mediashortcut.addshortcut.AddVideo:
+    android.graphics.Bitmap getThumbnail(android.net.Uri) -> a
+    java.lang.String getId() -> a
+    java.lang.String getName() -> b
+    java.lang.String getType() -> c
+arnodenhond.mediashortcut.shareshortcut.ShareImage -> arnodenhond.mediashortcut.shareshortcut.ShareImage:
+    android.graphics.Bitmap getThumbnail(android.net.Uri) -> a
+    java.lang.String getId() -> a
+    java.lang.String getName() -> b
+arnodenhond.mediashortcut.shareshortcut.ShareShortcut -> arnodenhond.mediashortcut.shareshortcut.ShareShortcut:
+    android.net.Uri data -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+arnodenhond.mediashortcut.shareshortcut.ShareShortcut$1 -> arnodenhond.mediashortcut.shareshortcut.a:
+    arnodenhond.mediashortcut.shareshortcut.ShareShortcut this$0 -> a
+    android.content.Intent val$dataview -> b
+    android.graphics.Bitmap val$bitmap -> c
+    android.widget.EditText val$title -> d
+    void onClick(android.content.DialogInterface,int) -> onClick
+arnodenhond.mediashortcut.shareshortcut.ShareShortcut$2 -> arnodenhond.mediashortcut.shareshortcut.b:
+    arnodenhond.mediashortcut.shareshortcut.ShareShortcut this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+arnodenhond.mediashortcut.shareshortcut.ShareVideo -> arnodenhond.mediashortcut.shareshortcut.ShareVideo:
+    android.graphics.Bitmap getThumbnail(android.net.Uri) -> a
+    java.lang.String getId() -> a
+    java.lang.String getName() -> b
