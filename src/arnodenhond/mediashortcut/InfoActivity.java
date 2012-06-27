@@ -1,4 +1,3 @@
-
 package arnodenhond.mediashortcut;
 
 import android.app.Activity;
@@ -33,5 +32,5 @@ public class InfoActivity extends Activity {
 		intent.setData(Uri.parse("market://search?q=pub:Arno den Hond"));
 		startActivity(intent);
 	}
-	
+
 }

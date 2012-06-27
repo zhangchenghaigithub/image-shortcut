@@ -8,6 +8,7 @@
     <string name="shortcutadded">Shortcut Added</string>
     <string name="shortcutcanceled">Shortcut Canceled</string>
     <string name="couldnotgetthumbnail">Could Not Get Thumbnail</string>
+    <string name="couldnotcrop">Could not crop image. Using full size.</string>
     <string name="settitle">Shortcut Title</string>
     <string name="ok">Create Shortcut</string>
     <string name="header">Image Shortcut v%1$d by Arno den Hond © 2012</string>
