@@ -6,9 +6,9 @@ arnodenhond.mediashortcut.Launcher -> arnodenhond.mediashortcut.Launcher:
 arnodenhond.mediashortcut.MediaShortcut -> arnodenhond.mediashortcut.MediaShortcut:
     android.util.DisplayMetrics metrics -> a
     java.lang.String getId() -> a
-    java.lang.String getName() -> b
+    java.lang.String getNameColumn() -> b
     java.lang.String getType() -> c
-    java.lang.String getData() -> d
+    java.lang.String getDataColumn() -> d
     android.graphics.Bitmap getThumbnail(android.net.Uri) -> a
     android.widget.EditText getTitleEditText(java.lang.String) -> a
     android.content.Intent getViewIntent(android.net.Uri) -> b
@@ -19,8 +19,8 @@ arnodenhond.mediashortcut.MediaShortcut -> arnodenhond.mediashortcut.MediaShortc
 arnodenhond.mediashortcut.addshortcut.AddImage -> arnodenhond.mediashortcut.addshortcut.AddImage:
     android.graphics.Bitmap getThumbnail(android.net.Uri) -> a
     java.lang.String getId() -> a
-    java.lang.String getName() -> b
-    java.lang.String getData() -> d
+    java.lang.String getNameColumn() -> b
+    java.lang.String getDataColumn() -> d
     java.lang.String getType() -> c
 arnodenhond.mediashortcut.addshortcut.AddShortcut -> arnodenhond.mediashortcut.addshortcut.AddShortcut:
     android.net.Uri data -> a
@@ -38,14 +38,14 @@ arnodenhond.mediashortcut.addshortcut.AddShortcut$2 -> arnodenhond.mediashortcut
 arnodenhond.mediashortcut.addshortcut.AddVideo -> arnodenhond.mediashortcut.addshortcut.AddVideo:
     android.graphics.Bitmap getThumbnail(android.net.Uri) -> a
     java.lang.String getId() -> a
-    java.lang.String getName() -> b
-    java.lang.String getData() -> d
+    java.lang.String getNameColumn() -> b
+    java.lang.String getDataColumn() -> d
     java.lang.String getType() -> c
 arnodenhond.mediashortcut.shareshortcut.ShareImage -> arnodenhond.mediashortcut.shareshortcut.ShareImage:
     android.graphics.Bitmap getThumbnail(android.net.Uri) -> a
     java.lang.String getId() -> a
-    java.lang.String getName() -> b
-    java.lang.String getData() -> d
+    java.lang.String getNameColumn() -> b
+    java.lang.String getDataColumn() -> d
     java.lang.String getType() -> c
 arnodenhond.mediashortcut.shareshortcut.ShareShortcut -> arnodenhond.mediashortcut.shareshortcut.ShareShortcut:
     android.net.Uri data -> a
@@ -63,6 +63,6 @@ arnodenhond.mediashortcut.shareshortcut.ShareShortcut$2 -> arnodenhond.mediashor
 arnodenhond.mediashortcut.shareshortcut.ShareVideo -> arnodenhond.mediashortcut.shareshortcut.ShareVideo:
     android.graphics.Bitmap getThumbnail(android.net.Uri) -> a
     java.lang.String getId() -> a
-    java.lang.String getName() -> b
-    java.lang.String getData() -> d
+    java.lang.String getNameColumn() -> b
+    java.lang.String getDataColumn() -> d
     java.lang.String getType() -> c
