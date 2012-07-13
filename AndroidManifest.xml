@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="arnodenhond.imageshortcut"
-    android:versionCode="8"
-    android:versionName="8" >
+    android:versionCode="9"
+    android:versionName="9" >
 
     <uses-sdk
         android:minSdkVersion="7"
@@ -17,7 +17,7 @@
         <activity
             android:name="arnodenhond.mediashortcut.addshortcut.AddImage"
             android:configChanges="orientation|keyboardHidden"
-            android:label="@string/imageshortcut" >
+            android:label="@string/mediashortcut" >
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
             </intent-filter>
@@ -25,24 +25,21 @@
         <activity
             android:name="arnodenhond.mediashortcut.addshortcut.AddVideo"
             android:configChanges="orientation|keyboardHidden"
-            android:label="@string/videoshortcut" >
+            android:label="@string/mediashortcut" >
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
             </intent-filter>
         </activity>
         <activity
             android:name="arnodenhond.mediashortcut.InfoActivity"
-            android:label="@string/mediashortcut"
-            android:noHistory="true" >
+            android:label="@string/mediashortcut" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.INFO" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="arnodenhond.mediashortcut.Launcher"
-            android:theme="@android:style/Theme.NoDisplay" >
+        <activity android:name="arnodenhond.mediashortcut.Launcher" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

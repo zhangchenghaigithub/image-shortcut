@@ -20,12 +20,17 @@ public class AddVideo extends AddShortcut {
 	}
 
 	@Override
-	public String getName() {
+	public String getNameColumn() {
 		return android.provider.MediaStore.Video.Media.DISPLAY_NAME;
 	}
 
 	@Override
-	String getType() {
+	public String getDataColumn() {
+		return android.provider.MediaStore.Video.Media.DATA;
+	}
+
+	@Override
+	public String getType() {
 		return "video/*";
 	}
 

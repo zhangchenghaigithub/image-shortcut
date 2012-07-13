@@ -1,10 +1,19 @@
 arnodenhond.mediashortcut.InfoActivity
-arnodenhond.mediashortcut.InfoActivity: void startmarket(android.view.View)
+arnodenhond.mediashortcut.InfoActivity: InfoActivity()
+arnodenhond.mediashortcut.InfoActivity: void postcomment(android.view.View)
 arnodenhond.mediashortcut.Launcher
+arnodenhond.mediashortcut.Launcher: Launcher()
 arnodenhond.mediashortcut.MediaShortcut
+arnodenhond.mediashortcut.MediaShortcut: MediaShortcut()
 arnodenhond.mediashortcut.addshortcut.AddImage
+arnodenhond.mediashortcut.addshortcut.AddImage: AddImage()
 arnodenhond.mediashortcut.addshortcut.AddShortcut
+arnodenhond.mediashortcut.addshortcut.AddShortcut: AddShortcut()
 arnodenhond.mediashortcut.addshortcut.AddVideo
+arnodenhond.mediashortcut.addshortcut.AddVideo: AddVideo()
 arnodenhond.mediashortcut.shareshortcut.ShareImage
+arnodenhond.mediashortcut.shareshortcut.ShareImage: ShareImage()
 arnodenhond.mediashortcut.shareshortcut.ShareShortcut
+arnodenhond.mediashortcut.shareshortcut.ShareShortcut: ShareShortcut()
 arnodenhond.mediashortcut.shareshortcut.ShareVideo
+arnodenhond.mediashortcut.shareshortcut.ShareVideo: ShareVideo()

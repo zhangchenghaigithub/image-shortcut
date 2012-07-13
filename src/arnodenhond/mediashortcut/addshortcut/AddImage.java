@@ -20,12 +20,17 @@ public class AddImage extends AddShortcut {
 	}
 
 	@Override
-	public String getName() {
+	public String getNameColumn() {
 		return android.provider.MediaStore.Images.Media.DISPLAY_NAME;
 	}
 
 	@Override
-	String getType() {
+	public String getDataColumn() {
+		return android.provider.MediaStore.Images.Media.DATA;
+	}
+
+	@Override
+	public String getType() {
 		return "image/*";
 	}
 

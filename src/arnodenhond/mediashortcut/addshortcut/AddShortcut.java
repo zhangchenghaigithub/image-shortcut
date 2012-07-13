@@ -6,19 +6,15 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.widget.EditText;
 import android.widget.Toast;
 import arnodenhond.imageshortcut.R;
 import arnodenhond.mediashortcut.MediaShortcut;
 
 public abstract class AddShortcut extends MediaShortcut {
-
-	abstract String getType();
 
 	private static final int REQUEST_PICK = 1;
 	private static final int REQUEST_CROP = 2;
@@ -50,7 +46,7 @@ public abstract class AddShortcut extends MediaShortcut {
 		if (requestCode == REQUEST_PICK) {
 			data = pickedMedia.getData();
 			Intent cropIntent = new Intent(ACTION_CROP);
-			cropIntent.setData(data);
+			cropIntent.setDataAndType(getDataString(data), getType());
 			cropIntent.putExtra("crop", "true");
 			cropIntent.putExtra("outputX", 100);
 			cropIntent.putExtra("outputY", 100);
@@ -81,7 +77,7 @@ public abstract class AddShortcut extends MediaShortcut {
 			finish();
 			return;
 		}
-		final Intent dataview = getViewIntent(data);
+		final Intent dataview = getViewIntent(getDataString(data));
 
 		AlertDialog.Builder titleAlert = new AlertDialog.Builder(this);
 		titleAlert.setTitle(R.string.settitle);

@@ -1,5 +1,7 @@
 package arnodenhond.mediashortcut;
 
+import java.net.URLDecoder;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
@@ -22,7 +24,11 @@ public abstract class MediaShortcut extends Activity {
 
 	public abstract String getId();
 
-	public abstract String getName();
+	public abstract String getNameColumn();
+
+	public abstract String getType();
+
+	public abstract String getDataColumn();
 
 	public abstract Bitmap getThumbnail(Uri data);
 
@@ -36,9 +42,9 @@ public abstract class MediaShortcut extends Activity {
 	}
 
 	public Intent getViewIntent(Uri data) {
-		Intent viewData = new Intent(Intent.ACTION_VIEW, data);
-		// viewData.setFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
-		// //causes shortcuts to disappear on some devices after reboot
+		Intent viewData = new Intent(Intent.ACTION_VIEW);
+		viewData.setDataAndType(data, getType());
+		viewData.setFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
 		viewData.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		viewData.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		return viewData;
@@ -47,7 +53,7 @@ public abstract class MediaShortcut extends Activity {
 	public String getTitleString(Uri data) {
 		try {
 			Uri contentUri = Uri.parse(data.toString().substring(0, data.toString().lastIndexOf('/')));
-			Cursor cursor = managedQuery(contentUri, new String[] { getId(), getName() }, getId() + "=?", new String[] { data.getLastPathSegment() }, null);
+			Cursor cursor = managedQuery(contentUri, new String[] { getId(), getNameColumn() }, getId() + "=?", new String[] { data.getLastPathSegment() }, null);
 			if (cursor.isAfterLast())
 				return getString(R.string.settitle);
 			cursor.moveToFirst();
@@ -56,6 +62,22 @@ public abstract class MediaShortcut extends Activity {
 			return defaultTitle;
 		} catch (Throwable t) {
 			return data.toString();
+		}
+	}
+
+	public Uri getDataString(Uri data) {
+		try {
+			Uri contentUri = Uri.parse(data.toString().substring(0, data.toString().lastIndexOf('/')));
+			Cursor cursor = managedQuery(contentUri, new String[] { getId(), getDataColumn() }, getId() + "=?", new String[] { data.getLastPathSegment() }, null);
+			if (cursor.isAfterLast())
+				return data;
+			cursor.moveToFirst();
+			String defaultTitle = cursor.getString(1);
+			defaultTitle = URLDecoder.decode(defaultTitle, "x-www-form-urlencoded");
+			cursor.close();
+			return Uri.parse("file://" + defaultTitle);
+		} catch (Throwable t) {
+			return data;
 		}
 	}
 

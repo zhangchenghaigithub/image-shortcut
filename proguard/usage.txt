@@ -4,7 +4,6 @@ arnodenhond.imageshortcut.BuildConfig
 arnodenhond.imageshortcut.R
 arnodenhond.imageshortcut.R$attr
 arnodenhond.imageshortcut.R$drawable
-arnodenhond.imageshortcut.R$id
 arnodenhond.imageshortcut.R$layout
 arnodenhond.imageshortcut.R$string
 arnodenhond.imageshortcut.R$style

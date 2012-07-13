@@ -20,8 +20,17 @@ public class ShareImage extends ShareShortcut {
 	}
 
 	@Override
-	public String getName() {
+	public String getNameColumn() {
 		return android.provider.MediaStore.Images.Media.DISPLAY_NAME;
 	}
 
+	@Override
+	public String getDataColumn() {
+		return android.provider.MediaStore.Images.Media.DATA;
+	}
+
+	@Override
+	public String getType() {
+		return "image/*";
+	}
 }

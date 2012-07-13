@@ -3,8 +3,8 @@ package arnodenhond.mediashortcut.shareshortcut;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.DialogInterface.OnCancelListener;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
@@ -27,7 +27,7 @@ public abstract class ShareShortcut extends MediaShortcut {
 		data = (Uri) getIntent().getParcelableExtra(Intent.EXTRA_STREAM);
 
 		Intent cropIntent = new Intent(ACTION_CROP);
-		cropIntent.setData(data);
+		cropIntent.setDataAndType(getDataString(data), getType());
 		cropIntent.putExtra("crop", "true");
 		cropIntent.putExtra("outputX", 100);
 		cropIntent.putExtra("outputY", 100);
@@ -41,7 +41,7 @@ public abstract class ShareShortcut extends MediaShortcut {
 		} else {
 			Toast.makeText(this, R.string.couldnotcrop, Toast.LENGTH_SHORT).show();
 			onActivityResult(0, Activity.RESULT_OK, null);
-			//continue as normal
+			// continue as normal
 		}
 
 	}
@@ -68,7 +68,7 @@ public abstract class ShareShortcut extends MediaShortcut {
 			finish();
 			return;
 		}
-		final Intent dataview = getViewIntent(data);
+		final Intent dataview = getViewIntent(getDataString(data));
 
 		AlertDialog.Builder titleAlert = new AlertDialog.Builder(this);
 		titleAlert.setTitle(R.string.settitle);

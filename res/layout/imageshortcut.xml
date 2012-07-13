@@ -11,25 +11,18 @@
         android:padding="10dip" >
 
         <TextView
-            android:id="@+id/textview"
-            style="@android:style/TextAppearance.Large"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center" />
-
-        <TextView
             style="@android:style/TextAppearance.Medium"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:autoLink="all"
-            android:gravity="center"
-            android:text="@string/footer" />
+            android:text="@string/body" />
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:onClick="startmarket"
-            android:text="@string/moreapps" />
+            android:onClick="postcomment"
+            android:text="@string/postcomment" />
     </LinearLayout>
 
 </ScrollView>
