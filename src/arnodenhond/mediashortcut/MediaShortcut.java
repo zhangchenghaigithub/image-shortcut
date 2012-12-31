@@ -3,6 +3,7 @@ package arnodenhond.mediashortcut;
 import java.net.URLDecoder;
 
 import android.app.Activity;
+import android.app.ActivityManager;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -108,7 +109,12 @@ public abstract class MediaShortcut extends Activity {
 	private static final int DENSITY_XHIGH = 320;
 
 	private int getIconSize() {
-
+		if (android.os.Build.VERSION.SDK_INT>=11) {
+			ActivityManager am = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
+			return am.getLauncherLargeIconSize();
+		}
+		
+		
 		if (metrics == null) {
 			metrics = new DisplayMetrics();
 			getWindowManager().getDefaultDisplay().getMetrics(metrics);
