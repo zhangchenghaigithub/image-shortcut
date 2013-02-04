@@ -15,13 +15,6 @@ public class Launcher extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		Intent result = new Intent();
-		result.putExtra(Intent.EXTRA_SHORTCUT_INTENT, new Intent(this, InfoActivity.class));
-		result.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, Intent.ShortcutIconResource.fromContext(this, R.drawable.mediashortcut));
-		result.putExtra(Intent.EXTRA_SHORTCUT_NAME, getString(R.string.mediashortcut));
-		result.setAction("com.android.launcher.action.INSTALL_SHORTCUT");
-		sendBroadcast(result);
-
 		startActivity(new Intent(this, InfoActivity.class));
 		finish();
 	}
