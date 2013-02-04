@@ -23,7 +23,6 @@ public class Launcher extends Activity {
 		sendBroadcast(result);
 
 		startActivity(new Intent(this, InfoActivity.class));
-		getPackageManager().setComponentEnabledSetting(new ComponentName(this, Launcher.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
 		finish();
 	}
 

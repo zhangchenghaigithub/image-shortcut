@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="arnodenhond.imageshortcut"
-    android:versionCode="9"
-    android:versionName="9" >
+    android:versionCode="10"
+    android:versionName="10" >
 
     <uses-sdk
         android:minSdkVersion="7"
@@ -17,7 +17,7 @@
         <activity
             android:name="arnodenhond.mediashortcut.addshortcut.AddImage"
             android:configChanges="orientation|keyboardHidden"
-            android:label="@string/mediashortcut" >
+            android:label="@string/imageshortcut" >
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
             </intent-filter>
@@ -25,7 +25,7 @@
         <activity
             android:name="arnodenhond.mediashortcut.addshortcut.AddVideo"
             android:configChanges="orientation|keyboardHidden"
-            android:label="@string/mediashortcut" >
+            android:label="@string/videoshortcut" >
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
             </intent-filter>

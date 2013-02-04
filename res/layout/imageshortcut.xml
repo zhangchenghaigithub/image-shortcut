@@ -16,13 +16,59 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:autoLink="all"
-            android:text="@string/body" />
+            android:text="@string/infoheader" />
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+            android:onClick="disablelauncher"
+            android:text="@string/disablelauncher" />
+
+        <TextView
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autoLink="all"
+            android:text="@string/infobody" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_dark" />
+
+        <TextView
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autoLink="all"
+            android:text="@string/infofooter" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_share"
+            android:onClick="shareurl"
+            android:text="@string/sharelink" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_edit"
             android:onClick="postcomment"
             android:text="@string/postcomment" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_send"
+            android:onClick="sendfeedback"
+            android:text="@string/sendfeedback" />
     </LinearLayout>
 
 </ScrollView>
