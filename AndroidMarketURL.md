@@ -1,0 +1,1 @@
+http://market.android.com/details?id=arnodenhond.imageshortcut
